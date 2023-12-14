@@ -15,10 +15,5 @@ namespace Mango.Services.CouponAPI
             });
             return mappingConfig;
         }
-
-        internal static object RegisterMapper()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

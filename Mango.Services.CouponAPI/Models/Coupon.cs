@@ -12,7 +12,7 @@ namespace Mango.Services.CouponAPI.Models
         public double DiscountAmount { get; set; }
         public int MinAmount { get; set; }
         //public DateTime LastUpdate { get; set; }
-        //public DateTime LastUpdate { get; set; }
+
 
     }
 }
