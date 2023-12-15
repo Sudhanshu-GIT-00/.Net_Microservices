@@ -13,7 +13,7 @@ IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddSwaggerGen();
+//builder.Services.AddSwaggerGen();
 // Add services to the container.
 
 builder.Services.AddControllers();
