@@ -1,7 +1,15 @@
+using Mango.web.Utility;
+using Mango.web.Service.IService;
+using Mango.web.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<ICouponService, CouponService>();
+SD.CouponAPIBase = builder.Configuration["ServiceUrl:CouponAPI"];
 
 var app = builder.Build();
 
