@@ -4416,7 +4416,7 @@ fieldset:disabled .btn {
     }
 
         .nav-tabs .nav-link:focus,
-        .nav-tabs .nav-link:hover {
+        .nav-tabs .nav-link:hover { 
             isolation: isolate;
             border-color: var(--bs-nav-tabs-link-hover-border-color)
         }
