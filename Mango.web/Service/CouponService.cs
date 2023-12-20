@@ -12,7 +12,7 @@ namespace Mango.web.Service
         {
             _baseService = baseService;
         }
-        public async Task<ResponseDto?> CreateCouponsAsync(CouponDto couponDto)//
+        public async Task<ResponseDto?> CreateCouponsAsync(CouponDto couponDto)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
@@ -37,7 +37,7 @@ namespace Mango.web.Service
                 Url = SD.CouponAPIBase + "/api/coupon/"+id
             });
         }
-        public async Task<ResponseDto?> UpdateCouponsAsync(CouponDto couponDto)//
+        public async Task<ResponseDto?> UpdateCouponsAsync(CouponDto couponDto)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
