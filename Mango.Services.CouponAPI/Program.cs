@@ -39,13 +39,13 @@ app.UseAuthorization();
 app.UseStaticFiles();
 app.MapControllers();
 
-AddMigration();
+ApplyMigration();
 
 app.Run();
 
 
 
-void AddMigration()
+void ApplyMigration()
 {
     using (var scope = app.Services.CreateScope())
     {

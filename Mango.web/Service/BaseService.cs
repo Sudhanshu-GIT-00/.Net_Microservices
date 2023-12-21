@@ -27,7 +27,7 @@ namespace Mango.web.Service
                 message.RequestUri = new Uri(requestDto.Url);
                 if (requestDto.Data != null)
                 {
-                    message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/jsonb ");
+                    message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                     //SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                 }
                 HttpResponseMessage? apiResponse = null;

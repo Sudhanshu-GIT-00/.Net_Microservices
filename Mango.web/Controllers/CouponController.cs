@@ -3,6 +3,7 @@ using Mango.web.Service.IService;
 using Mango.web.Services.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Mango.web.Controllers
@@ -25,6 +26,10 @@ namespace Mango.web.Controllers
             {
                 list = JsonConvert.DeserializeObject<List<CouponDto>>(Convert.ToString(response.Result));
             }
+            else
+            {
+                TempData["error"]=response?.Message;
+            }
             return View(list);
         }
         public async Task<IActionResult> CouponCreate()
@@ -40,10 +45,47 @@ namespace Mango.web.Controllers
 
                 if (response != null && response.IsSuccess)
                 {
+                    TempData["Success"] = "coupon Created Successfully";
                     return RedirectToAction(nameof(CouponIndex));
+                }
+                else
+                {
+                    TempData["error"] = response?.Message;
                 }
             }
             return View(model);
         }
-    }
+
+        public async Task<IActionResult> CouponDelete(int couponId)
+        {
+			ResponseDto? response = await _couponService.GetCouponByIdAsync(couponId);
+
+			if (response != null && response.IsSuccess)
+			{
+				CouponDto? moddel = JsonConvert.DeserializeObject<CouponDto>(Convert.ToString(response.Result));
+                return View(moddel);
+			}
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return NotFound();
+        }
+        [HttpPost]
+		public async Task<IActionResult> CouponDelete(CouponDto couponDto)
+		{
+			ResponseDto? response = await _couponService.DeleteCouponsAsync(couponDto.CouponId);
+
+			if (response != null && response.IsSuccess)
+			{
+                TempData["Success"] = "coupon Deleted Successfully";
+                return RedirectToAction(nameof(CouponIndex));
+			}
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return View(couponDto);
+		}
+	}
 }
