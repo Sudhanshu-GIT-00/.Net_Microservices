@@ -52,7 +52,7 @@ namespace Mango.Services.AuthAPI.Controllers
             if(!assignRoleSuccessful)
             {
                 _response.IsSuccess=false;
-                _response.Message = "Error encountered - 1";
+                _response.Message = "Error encountered";
                 return BadRequest(_response);
             }
             return Ok(_response);
