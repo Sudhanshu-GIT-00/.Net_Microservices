@@ -30,6 +30,7 @@ namespace Mango.Services.AuthAPI.Controllers
             }
             return Ok(_response);
         }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto model)
         {

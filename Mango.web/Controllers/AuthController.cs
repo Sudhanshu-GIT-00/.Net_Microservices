@@ -21,6 +21,7 @@ namespace Mango.web.Controllers
             LoginRequestDto loginRequestDto = new();    
             return View(loginRequestDto);
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestDto obj)
         {
@@ -28,8 +29,7 @@ namespace Mango.web.Controllers
             
             if (responseDto != null && responseDto.IsSuccess)
             {
-                LoginResponseDto loginResponseDto =
-                    JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(responseDto.Result));
+                LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(responseDto.Result));
 
                 return RedirectToAction("Index","Home");
             }
@@ -39,6 +39,7 @@ namespace Mango.web.Controllers
                 return View(obj);
             }
         }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -50,6 +51,7 @@ namespace Mango.web.Controllers
             ViewBag.roleList = roleList;
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Register(RegistrationRequestDto obj)
         {
