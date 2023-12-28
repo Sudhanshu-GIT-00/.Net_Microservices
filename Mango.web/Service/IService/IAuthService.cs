@@ -1,6 +1,6 @@
 ﻿using Mango.web.Models;
 
-namespace Mango.web.Service
+namespace Mango.web.Service.IService
 {
     public interface IAuthService
     {

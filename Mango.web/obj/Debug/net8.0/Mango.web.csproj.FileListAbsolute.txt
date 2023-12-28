@@ -33,3 +33,8 @@ D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\refint\Mango.web.dll
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\Mango.web.pdb
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\Mango.web.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\ref\Mango.web.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

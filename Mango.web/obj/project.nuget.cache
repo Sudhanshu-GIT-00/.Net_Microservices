@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "bk2CbF7t88TOBgjDxUw0M0r70E+3f8dHrv+bSaM09gFfUYIe3k96zJi7SJWccPpRmi6BYpqayNa+7bVXh6z5OQ==",
+  "dgSpecHash": "sOq3g8CMkQ3e4Ul//MbYiUyy7UusPLUO5Lh56GtZUiDL9v3/cXd39vF9mswlC+K4II4tEXZXi5Y6Xm+eApJAsA==",
   "success": true,
   "projectFilePath": "D:\\Db-Mango\\Mango\\Mango.web\\Mango.web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raktbeej\\.nuget\\packages\\jsonconverter.abstractions\\0.4.0\\jsonconverter.abstractions.0.4.0.nupkg.sha512",
-    "C:\\Users\\Raktbeej\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512"
   ],
   "logs": []
 }
