@@ -42,9 +42,14 @@ namespace Mango.web.Controllers
                 _tokenProvider.SetToken(loginResponseDto.Token);
                 return RedirectToAction("Index","Home");
             }
+            //else
+            //{
+            //    ModelState.AddModelError("CustomError", responseDto.Message);
+            //    return View(obj);
+            //}
             else
             {
-                ModelState.AddModelError("CustomError", responseDto.Message);
+                TempData["Error"] = responseDto.Message;
                 return View(obj);
             }
         }
@@ -79,6 +84,10 @@ namespace Mango.web.Controllers
                     return RedirectToAction(nameof(Login));
                 }
             }
+            else
+            {
+                TempData["Error"] = result.Message;
+            }
             var roleList = new List<SelectListItem>()
             {
                 new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},
@@ -110,8 +119,8 @@ namespace Mango.web.Controllers
 
             identity.AddClaim(new Claim(ClaimTypes.Name,
                 jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
-            //identity.AddClaim(new Claim(ClaimTypes.Role,
-            //    jwt.Claims.FirstOrDefault(u => u.Type == "role").Value));
+            identity.AddClaim(new Claim(ClaimTypes.Role,
+                jwt.Claims.FirstOrDefault(u => u.Type == "role").Value));
 
             var principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
