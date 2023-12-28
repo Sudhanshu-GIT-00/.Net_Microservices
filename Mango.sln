@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.web", "Mango.web\Mango.web.csproj", "{C8602873-23FD-4502-B1A6-C8719A73C4B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{4133C137-3C99-455F-B5E8-9A82B33162D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{4133C137-3C99-455F-B5E8-9A82B33162D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Service.ProductAPI", "Mango.Service.ProductAPI\Mango.Service.ProductAPI.csproj", "{94281EA6-E083-4ED7-AFB4-CDB45B84C80E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{4133C137-3C99-455F-B5E8-9A82B33162D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4133C137-3C99-455F-B5E8-9A82B33162D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4133C137-3C99-455F-B5E8-9A82B33162D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94281EA6-E083-4ED7-AFB4-CDB45B84C80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94281EA6-E083-4ED7-AFB4-CDB45B84C80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94281EA6-E083-4ED7-AFB4-CDB45B84C80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94281EA6-E083-4ED7-AFB4-CDB45B84C80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{A704ECA4-03BC-4B3F-BFE4-91D808AEB901} = {F9C7344A-BE96-4CA5-822B-9205D8CFC180}
 		{C8602873-23FD-4502-B1A6-C8719A73C4B9} = {F05FE522-8233-41AD-A9FB-3A73A2532A1A}
 		{4133C137-3C99-455F-B5E8-9A82B33162D3} = {F9C7344A-BE96-4CA5-822B-9205D8CFC180}
+		{94281EA6-E083-4ED7-AFB4-CDB45B84C80E} = {F9C7344A-BE96-4CA5-822B-9205D8CFC180}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87324430-AA81-4F25-ADC8-70CE32236D40}
