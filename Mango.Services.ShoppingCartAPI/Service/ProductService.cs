@@ -1,5 +1,6 @@
 ﻿using Mango.Services.ShoppingCartAPI.Models.Dto;
 using Mango.Services.ShoppingCartAPI.Service.IService;
+using Newtonsoft.Json;
 
 namespace Mango.Services.ShoppingCartAPI.Service
 {
@@ -11,9 +12,17 @@ namespace Mango.Services.ShoppingCartAPI.Service
             _httpClientFactory = httpClientFactory;
         }
 
-            public Task<IEnumerable<ProductDto>> GetProduct()
+            public async Task<IEnumerable<ProductDto>> GetProducts()
         {
-            throw new NotImplementedException();
+            var client = _httpClientFactory.CreateClient("Product");
+            var response = await client.GetAsync($"/api/product");
+            var apiContet = await response.Content.ReadAsStringAsync();
+            var resp = JsonConvert.DeserializeObject<ResponseDto>(apiContet);
+            if (resp.IsSuccess)
+            {
+                return JsonConvert.DeserializeObject<IEnumerable<ProductDto>>(Convert.ToString(resp.Result));
+            }
+            return new List<ProductDto>();
         }
     }
 }
