@@ -141,3 +141,4 @@ D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\refint\Mango.Services.
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.pdb
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\ref\Mango.Services.AuthAPI.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\IdentityModel.dll

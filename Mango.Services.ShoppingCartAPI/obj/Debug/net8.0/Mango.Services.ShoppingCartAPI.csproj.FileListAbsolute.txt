@@ -140,3 +140,4 @@ D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\refint\Mango.S
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.pdb
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\ref\Mango.Services.ShoppingCartAPI.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\IdentityModel.dll

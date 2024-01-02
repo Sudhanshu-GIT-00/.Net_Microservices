@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v8.0": {
       "Mango.web/1.0.0": {
         "dependencies": {
+          "IdentityModel": "6.2.0",
           "JsonConverter.Abstractions": "0.4.0",
           "Newtonsoft.Json": "13.0.3",
           "System.IdentityModel.Tokens.Jwt": "7.0.3"
         },
         "runtime": {
           "Mango.web.dll": {}
+        }
+      },
+      "IdentityModel/6.2.0": {
+        "runtime": {
+          "lib/net6.0/IdentityModel.dll": {
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
+          }
         }
       },
       "JsonConverter.Abstractions/0.4.0": {
@@ -92,6 +101,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "IdentityModel/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4AXZ6Tp+DNwrSSeBziiX/231i8ZpD77A9nEMyc68gLSCWG0kgWsIBeFquYcBebiIPkfB7GEXzCYuuLeR1QZJIQ==",
+      "path": "identitymodel/6.2.0",
+      "hashPath": "identitymodel.6.2.0.nupkg.sha512"
     },
     "JsonConverter.Abstractions/0.4.0": {
       "type": "package",

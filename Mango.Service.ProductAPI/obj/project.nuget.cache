@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lrC06CGCqYMVDNTQMnxzMdBhZWGQklLxtqufoLJ73xvib5gmneOlSgextozo8sHGkVnoPaN5jbiyrtZH3WX5KA==",
+  "dgSpecHash": "+0tpXRWTAmzJ9GottGrsTGnyBcLaD4w45DCVe6/qTA7fyBAo50gn0smCBZkqejOTHnDr+Cs0PXuZDYrb7lwfQQ==",
   "success": true,
   "projectFilePath": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\Mango.Service.ProductAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Raktbeej\\.nuget\\packages\\azure.core\\1.36.0\\azure.core.1.36.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\azure.identity\\1.10.4\\azure.identity.1.10.4.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\jsonconverter.abstractions\\0.4.0\\jsonconverter.abstractions.0.4.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

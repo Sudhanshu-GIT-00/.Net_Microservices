@@ -37,6 +37,7 @@ namespace Mango.web.Service
                     message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                     //SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                 }
+
                 HttpResponseMessage? apiResponse = null;
 
                 switch (requestDto.ApiType)
@@ -67,7 +68,9 @@ namespace Mango.web.Service
                     case HttpStatusCode.InternalServerError:
                         return new() { IsSuccess = false, Message = "Internal Server Error" };
                     default:
+                        /// Raw response from API
                         var apiContent = await apiResponse.Content.ReadAsStringAsync();
+                        /// Refine Response from API
                         var apiResponseDto = JsonConvert.DeserializeObject<ResponseDto>(apiContent);
                         return apiResponseDto;
                 }

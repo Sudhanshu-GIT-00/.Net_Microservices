@@ -140,3 +140,4 @@ D:\Db-Mango\Mango\Mango.Services.CouponAPI\obj\Debug\net8.0\Mango.Services.Coupo
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\obj\Debug\net8.0\ref\Mango.Services.CouponAPI.dll
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\JsonConverter.Abstractions.dll
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\IdentityModel.dll

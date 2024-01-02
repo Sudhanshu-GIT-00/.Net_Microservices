@@ -56,14 +56,14 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 app.UseSwagger();
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI(config =>
-//    {
-//        config.SwaggerEndpoint("/swagger/v1/swagger.json", "Coupon API");
-//    });
-//}
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(config =>
+    {
+        config.SwaggerEndpoint("/swagger/v1/swagger.json", "Coupon API");
+    });
+}
 app.UseSwaggerUI(c =>
 {
     if (!app.Environment.IsDevelopment())

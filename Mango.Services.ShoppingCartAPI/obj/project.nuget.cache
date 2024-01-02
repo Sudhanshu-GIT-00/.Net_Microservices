@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "asMwcF2Xqk9MlpIXZzDGZZM9exRRIM5F2dNC+yF8TbarYVckp5phHICERzfpl2MDX8TnFDdKzy2JEIcxFokLaQ==",
+  "dgSpecHash": "5iW3jlEUUdudqhzjW1yFinlWa4jPzQ02LxK+n+ppMqk08auj3bbUFrg9kahvRaS89zQ/IJ/ZXH6GaAxBK9S/+Q==",
   "success": true,
   "projectFilePath": "D:\\Db-Mango\\Mango\\Mango.Services.ShoppingCartAPI\\Mango.Services.ShoppingCartAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Raktbeej\\.nuget\\packages\\azure.core\\1.36.0\\azure.core.1.36.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\azure.identity\\1.10.4\\azure.identity.1.10.4.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\jsonconverter.abstractions\\0.4.0\\jsonconverter.abstractions.0.4.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

@@ -140,3 +140,4 @@ D:\Db-Mango\Mango\Mango.Service.ProductAPI\obj\Debug\net8.0\refint\Mango.Service
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\obj\Debug\net8.0\Mango.Service.ProductAPI.pdb
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\obj\Debug\net8.0\Mango.Service.ProductAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\obj\Debug\net8.0\ref\Mango.Service.ProductAPI.dll
+D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\IdentityModel.dll
