@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[1.10.4, )"
             },
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.17.1, )"
+            },
             "IdentityModel": {
               "target": "Package",
               "version": "[6.2.0, )"

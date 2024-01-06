@@ -141,3 +141,6 @@ D:\Db-Mango\Mango\Mango.Services.CouponAPI\obj\Debug\net8.0\ref\Mango.Services.C
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\JsonConverter.Abstractions.dll
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\IdentityModel.dll
+D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+D:\Db-Mango\Mango\Mango.Services.CouponAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll

@@ -48,19 +48,19 @@ namespace Mango.Web.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> EmailCart(CartDto cartDto)
-        //{
-        //    CartDto cart = await LoadCartDtoBasedOnLoggedInUser();
-        //    cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
-        //    ResponseDto? response = await _cartService.EmailCart(cart);
-        //    if (response != null & response.IsSuccess)
-        //    {
-        //        TempData["success"] = "Email will be processed and sent shortly.";
-        //        return RedirectToAction(nameof(CartIndex));
-        //    }
-        //    return View();
-        //}
+        [HttpPost]
+        public async Task<IActionResult> EmailCart(CartDto cartDto)
+        {
+            CartDto cart = await LoadCartDtoBasedOnLoggedInUser();
+            cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
+            ResponseDto? response = await _cartService.EmailCart(cart);
+            if (response != null & response.IsSuccess)
+            {
+                TempData["success"] = "Email will be processed and sent shortly.";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
 
         [HttpGet]
         public async Task<IActionResult> Remove(int cartDetailsId)

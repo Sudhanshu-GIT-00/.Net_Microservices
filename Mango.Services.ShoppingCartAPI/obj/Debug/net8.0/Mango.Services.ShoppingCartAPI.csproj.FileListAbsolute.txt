@@ -141,3 +141,8 @@ D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\ref\Mango.Services.ShoppingCartAPI.dll
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\IdentityModel.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\Mango.MessageBus.dll
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\Mango.MessageBus.pdb

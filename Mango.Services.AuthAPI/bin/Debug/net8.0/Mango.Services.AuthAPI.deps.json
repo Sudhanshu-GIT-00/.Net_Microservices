@@ -11,6 +11,7 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Azure.Identity": "1.10.4",
+          "Azure.Messaging.ServiceBus": "7.17.1",
           "IdentityModel": "6.2.0",
           "JsonConverter.Abstractions": "0.4.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
@@ -66,6 +67,19 @@
           }
         }
       },
+      "Azure.Core.Amqp/1.3.0": {
+        "dependencies": {
+          "Microsoft.Azure.Amqp": "2.6.4",
+          "System.Memory": "4.5.4",
+          "System.Memory.Data": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Core.Amqp.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.300.23.15207"
+          }
+        }
+      },
       "Azure.Identity/1.10.4": {
         "dependencies": {
           "Azure.Core": "1.36.0",
@@ -80,6 +94,21 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.10.4.0",
             "fileVersion": "1.1000.423.56303"
+          }
+        }
+      },
+      "Azure.Messaging.ServiceBus/7.17.1": {
+        "dependencies": {
+          "Azure.Core": "1.36.0",
+          "Azure.Core.Amqp": "1.3.0",
+          "Microsoft.Azure.Amqp": "2.6.4",
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Memory.Data": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {
+            "assemblyVersion": "7.17.1.0",
+            "fileVersion": "7.1700.123.60403"
           }
         }
       },
@@ -133,6 +162,14 @@
           "lib/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53112"
+          }
+        }
+      },
+      "Microsoft.Azure.Amqp/2.6.4": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.6.4.0"
           }
         }
       },
@@ -1013,12 +1050,26 @@
       "path": "azure.core/1.36.0",
       "hashPath": "azure.core.1.36.0.nupkg.sha512"
     },
+    "Azure.Core.Amqp/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6GG4gyFkAuHtpBVkvj0wE5+lCM+ttsZlIWAipBkI+jlCUlTgrTiNUROBFnb8xuKoymVDw9Tf1W8RoKqgbd71lg==",
+      "path": "azure.core.amqp/1.3.0",
+      "hashPath": "azure.core.amqp.1.3.0.nupkg.sha512"
+    },
     "Azure.Identity/1.10.4": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-hSvisZy9sld0Gik1X94od3+rRXCx+AKgi+iLH6fFdlnRZRePn7RtrqUGSsORiH2h8H2sc4NLTrnuUte1WL+QuQ==",
       "path": "azure.identity/1.10.4",
       "hashPath": "azure.identity.1.10.4.nupkg.sha512"
+    },
+    "Azure.Messaging.ServiceBus/7.17.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RvpLKmp2ur7hfm7NqiKPY2wIU7O4+yajYm3w7etnDsNj6sMlLCyNyCNMgVGeudQ4nOrk0YtoHJ1SbX2nJpCsUw==",
+      "path": "azure.messaging.servicebus/7.17.1",
+      "hashPath": "azure.messaging.servicebus.7.17.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1068,6 +1119,13 @@
       "sha512": "sha512-ua2LSZY/f0BkNUUVPPm83eq4Xnt+FZYutiMimRrzSmv2K2t2Ia/PuP4CfibYNSwnKl6fbZ49Bwn2mQGWnmmvOA==",
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.0",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Azure.Amqp/2.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xf2mbwTSuUtqRlULKXCEuXPxlBhZzZXWmMxnxF64WJAelo3PA7kIDR4Bv+eOBYxHyr3FJtwG3/7rrhyXIx1Qzg==",
+      "path": "microsoft.azure.amqp/2.6.4",
+      "hashPath": "microsoft.azure.amqp.2.6.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",

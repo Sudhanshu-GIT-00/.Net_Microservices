@@ -142,3 +142,6 @@ D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\ref\Mango.Services.AuthAPI.dll
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\IdentityModel.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
