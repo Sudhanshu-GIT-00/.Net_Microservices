@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mango.MessageBus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e32b08740a026411b2fbf4cbe7d130c74f55b91f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75b45f3fa37de015d800386f59a36c59d8a76f20")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mango.MessageBus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mango.MessageBus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

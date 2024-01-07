@@ -45,3 +45,5 @@ D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
 D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Mango.MessageBus.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\Mango.MessageBus.pdb
