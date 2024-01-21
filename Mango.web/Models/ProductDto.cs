@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Mango.web.Utility;
 
 namespace Mango.web.Models
 {

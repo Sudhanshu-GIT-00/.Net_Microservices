@@ -24,12 +24,16 @@
                         <span asp-validation-for="CartHeader.Name" class="text-danger"></span>
                     </div>
                     <div class="col-12 py-2">
-                        <input placeholder="email..." asp-for="CartHeader.Email" class="form-control" />
+                        <input asp-for="CartHeader.Email" placeholder="email..." class="form-control" />
                         <span asp-validation-for="CartHeader.Email" class="text-danger"></span>
                     </div>
                     <div class="col-12 py-2">
-                        <input class="form-control" asp-for="CartHeader.Phone" placeholder="phone number..." />
+                        <input asp-for="CartHeader.Phone" class="form-control" placeholder="phone number..." />
                         <span asp-validation-for="CartHeader.Phone" class="text-danger"></span>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHeader.Address" class="form-control" placeholder="Address..." />
+                        <span asp-validation-for="CartHeader.Address" class="text-danger"></span>
                     </div>
                     <div class="col-12 pt-2">
                         <label class="col-form-label">Order will be ready in 30minutes after placing order. If you place order when restaurant is closed it will be ready next day.</label>
@@ -55,7 +59,8 @@
                             </div>
                         </div>
                         <hr />
-                        @foreach(var cartObj in Model.CartDetails){
+                        @foreach(var cartObj in Model.CartDetails)
+                        {
                         <div class="row h-100">
                             <div class="col-6">
                                 <span style="font-size:20px">@cartObj.Product.Name</span>
