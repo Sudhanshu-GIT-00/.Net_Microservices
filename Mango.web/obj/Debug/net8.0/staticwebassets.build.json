@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y16TXssI3GR8vXlrKDsRPn3aePqewYKs1veSNZxbqDc=",
+  "Hash": "lK2+8BVng/zZHgIEOQDoSrI3ilrGSK3AMFA8zggYXU4=",
   "Source": "Mango.web",
   "BasePath": "_content/Mango.web",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\images\\order.PNG",
+      "SourceId": "Mango.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\",
+      "BasePath": "_content/Mango.web",
+      "RelativePath": "images/order.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\order.PNG"
     },
     {
       "Identity": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\js\\site.js",

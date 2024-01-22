@@ -147,3 +147,8 @@ D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Azure.Messaging.Servic
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Mango.MessageBus.dll
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Mango.MessageBus.pdb
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

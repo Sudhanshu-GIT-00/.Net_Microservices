@@ -146,3 +146,4 @@ D:\Db-Mango\Mango\Mango.Services.OrderAPI\bin\Debug\net8.0\runtimes\win\lib\net6
 D:\Db-Mango\Mango\Mango.Services.OrderAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Db-Mango\Mango\Mango.Services.OrderAPI\bin\Debug\net8.0\Mango.MessageBus.dll
 D:\Db-Mango\Mango\Mango.Services.OrderAPI\bin\Debug\net8.0\Mango.MessageBus.pdb
+D:\Db-Mango\Mango\Mango.Services.OrderAPI\bin\Debug\net8.0\Stripe.net.dll

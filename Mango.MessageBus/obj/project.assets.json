@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Azure.Core/1.36.0": {
+      "Azure.Core/1.37.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -42,10 +42,10 @@
           }
         }
       },
-      "Azure.Messaging.ServiceBus/7.17.1": {
+      "Azure.Messaging.ServiceBus/7.17.2": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.36.0",
+          "Azure.Core": "1.37.0",
           "Azure.Core.Amqp": "1.3.0",
           "Microsoft.Azure.Amqp": "2.6.4",
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -207,28 +207,24 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.36.0": {
-      "sha512": "vwqFZdHS4dzPlI7FFRkPx9ctA+aGGeRev3gnzG8lntWvKMmBhAmulABi1O9CEvS3/jzYt7yA+0pqVdxkpAd7dQ==",
+    "Azure.Core/1.37.0": {
+      "sha512": "ZSWV/ftBM/c/+Eo2hlzeEWntjqNG+8TWXX/DAKjBSWIf7nEvFILQoJL7JZx5HjypDvdNUMj5J2ji8ZpFFSghSg==",
       "type": "package",
-      "path": "azure.core/1.36.0",
+      "path": "azure.core/1.37.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.36.0.nupkg.sha512",
+        "azure.core.1.37.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "lib/net461/Azure.Core.dll",
         "lib/net461/Azure.Core.xml",
         "lib/net472/Azure.Core.dll",
         "lib/net472/Azure.Core.xml",
-        "lib/net5.0/Azure.Core.dll",
-        "lib/net5.0/Azure.Core.xml",
         "lib/net6.0/Azure.Core.dll",
         "lib/net6.0/Azure.Core.xml",
-        "lib/netcoreapp2.1/Azure.Core.dll",
-        "lib/netcoreapp2.1/Azure.Core.xml",
         "lib/netstandard2.0/Azure.Core.dll",
         "lib/netstandard2.0/Azure.Core.xml"
       ]
@@ -249,16 +245,16 @@
         "lib/netstandard2.0/Azure.Core.Amqp.xml"
       ]
     },
-    "Azure.Messaging.ServiceBus/7.17.1": {
-      "sha512": "RvpLKmp2ur7hfm7NqiKPY2wIU7O4+yajYm3w7etnDsNj6sMlLCyNyCNMgVGeudQ4nOrk0YtoHJ1SbX2nJpCsUw==",
+    "Azure.Messaging.ServiceBus/7.17.2": {
+      "sha512": "TvmQ+qBchdxl/e5H5dtocqe/x4dsddK6vL98YYP/Ip/t5T7twBMsDV2TUbR4fP/VWOo/XU+niArIv4vRjchkgQ==",
       "type": "package",
-      "path": "azure.messaging.servicebus/7.17.1",
+      "path": "azure.messaging.servicebus/7.17.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.messaging.servicebus.7.17.1.nupkg.sha512",
+        "azure.messaging.servicebus.7.17.2.nupkg.sha512",
         "azure.messaging.servicebus.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll",
@@ -566,7 +562,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Azure.Messaging.ServiceBus >= 7.17.1",
+      "Azure.Messaging.ServiceBus >= 7.17.2",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -616,7 +612,7 @@
         "dependencies": {
           "Azure.Messaging.ServiceBus": {
             "target": "Package",
-            "version": "[7.17.1, )"
+            "version": "[7.17.2, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

@@ -17,7 +17,7 @@ namespace Mango.Services.OrderAPI.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "8.0.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -54,7 +54,7 @@ namespace Mango.Services.OrderAPI.Migrations
 
                     b.HasIndex("OrderHeaderId");
 
-                    b.ToTable("CartDetails");
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("Mango.Services.OrderAPI.Models.OrderHeader", b =>
@@ -103,7 +103,7 @@ namespace Mango.Services.OrderAPI.Migrations
 
                     b.HasKey("OrderHeaderId");
 
-                    b.ToTable("CartHeaders");
+                    b.ToTable("OrderHeaders");
                 });
 
             modelBuilder.Entity("Mango.Services.OrderAPI.Models.OrderDetails", b =>

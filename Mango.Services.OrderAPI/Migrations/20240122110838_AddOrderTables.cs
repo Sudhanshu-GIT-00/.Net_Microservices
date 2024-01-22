@@ -12,7 +12,7 @@ namespace Mango.Services.OrderAPI.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "CartHeaders",
+                name: "OrderHeaders",
                 columns: table => new
                 {
                     OrderHeaderId = table.Column<int>(type: "int", nullable: false)
@@ -32,11 +32,11 @@ namespace Mango.Services.OrderAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CartHeaders", x => x.OrderHeaderId);
+                    table.PrimaryKey("PK_OrderHeaders", x => x.OrderHeaderId);
                 });
 
             migrationBuilder.CreateTable(
-                name: "CartDetails",
+                name: "OrderDetails",
                 columns: table => new
                 {
                     OrderDetailsId = table.Column<int>(type: "int", nullable: false)
@@ -50,18 +50,18 @@ namespace Mango.Services.OrderAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CartDetails", x => x.OrderDetailsId);
+                    table.PrimaryKey("PK_OrderDetails", x => x.OrderDetailsId);
                     table.ForeignKey(
-                        name: "FK_CartDetails_CartHeaders_OrderHeaderId",
+                        name: "FK_OrderDetails_OrderHeaders_OrderHeaderId",
                         column: x => x.OrderHeaderId,
-                        principalTable: "CartHeaders",
+                        principalTable: "OrderHeaders",
                         principalColumn: "OrderHeaderId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_CartDetails_OrderHeaderId",
-                table: "CartDetails",
+                name: "IX_OrderDetails_OrderHeaderId",
+                table: "OrderDetails",
                 column: "OrderHeaderId");
         }
 
@@ -69,10 +69,10 @@ namespace Mango.Services.OrderAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CartDetails");
+                name: "OrderDetails");
 
             migrationBuilder.DropTable(
-                name: "CartHeaders");
+                name: "OrderHeaders");
         }
     }
 }
