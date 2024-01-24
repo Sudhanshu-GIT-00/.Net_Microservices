@@ -28,7 +28,7 @@ namespace Mango.Services.OrderAPI.Controllers
             _productService = productService;
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPost("CreateOrder")]
         public async Task<ResponseDto> CreateOrder([FromBody] CartDto cartDto)
         {
