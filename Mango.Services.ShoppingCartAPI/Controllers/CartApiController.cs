@@ -24,7 +24,8 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         private ICouponService _couponService;
         private IConfiguration _configuration;
         private readonly IMessageBus _messageBus;
-        public CartApiController(AppDbContext db, IMapper mapper,IProductService productService, ICouponService couponService,IMessageBus messageBus, IConfiguration configuration)
+        public CartApiController(AppDbContext db, IMapper mapper,IProductService productService, 
+            ICouponService couponService,IMessageBus messageBus, IConfiguration configuration)
         {
             _db = db;
             _productService = productService;

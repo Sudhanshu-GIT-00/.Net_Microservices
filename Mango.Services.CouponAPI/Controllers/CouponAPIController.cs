@@ -77,27 +77,10 @@ namespace Mango.Services.CouponAPI.Controllers
             return _response;
         }
 
-        [HttpDelete]
-        [Route("{id:int}")]
-        [Authorize(Roles = "ADMIN")]
-        public ResponseDto Delete(int id)
-        {
-            try
-            {
-                Coupon obj = _db.Coupons.First(u => u.CouponId == id);
-                _db.Coupons.Remove(obj);
-                _db.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                _response.IsSuccess = false;
-                _response.Message = ex.Message;
-            }
-            return _response;
-        }
+        
 
         [HttpPost]
-        [Authorize(Roles ="ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Post([FromBody] CouponDto couponDto)
         {
             try
@@ -105,6 +88,20 @@ namespace Mango.Services.CouponAPI.Controllers
                 Coupon obj = _mapper.Map<Coupon>(couponDto);
                 _db.Coupons.Add(obj);
                 _db.SaveChanges();
+
+                // Here we using to send the coupon in stripe to apply and show coupon in payment getway
+
+                var options = new Stripe.CouponCreateOptions
+                {
+                    AmountOff = (long)(couponDto.DiscountAmount * 100),
+                    Name = couponDto.CouponCode,
+                    Currency = "usd",
+                    Id = couponDto.CouponCode,
+                };
+                var service = new Stripe.CouponService();
+                service.Create(options);
+
+
 
                 _response.Result = _mapper.Map<CouponDto>(obj);
             }
@@ -127,6 +124,30 @@ namespace Mango.Services.CouponAPI.Controllers
                 _db.SaveChanges();
                 
                 _response.Result = _mapper.Map<CouponDto>(obj);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
+        public ResponseDto Delete(int id)
+        {
+            try
+            {
+                Coupon obj = _db.Coupons.First(u => u.CouponId == id);
+                _db.Coupons.Remove(obj);
+                _db.SaveChanges();
+
+
+
+                var service = new Stripe.CouponService();
+                service.Delete(obj.CouponCode);
             }
             catch (Exception ex)
             {

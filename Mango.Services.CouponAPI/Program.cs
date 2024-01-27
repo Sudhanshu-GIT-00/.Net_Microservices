@@ -61,7 +61,7 @@ if (app.Environment.IsDevelopment())
         config.SwaggerEndpoint("/swagger/v1/swagger.json", "Coupon API");
     });
 }
-
+Stripe.StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

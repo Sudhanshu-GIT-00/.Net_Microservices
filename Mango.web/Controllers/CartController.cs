@@ -63,7 +63,7 @@ namespace Mango.Web.Controllers
             }
            return View();            
         }
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Confirmation(int orderId)
         {
             //ResponseDto? response = await _orderService.ValidateStripeSession(orderId);
@@ -76,6 +76,7 @@ namespace Mango.Web.Controllers
             //        return View(orderId);
             //    }
             //}
+
             ////redirect to some error page based on status
             return View(orderId);
         }

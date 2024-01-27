@@ -9,7 +9,7 @@
         public int Count { get; set; }
         public string ProductName { get; set; }
         public double Price { get; set; }
-        public string Address { get; set; }
+        //public string Address { get; set; }
 
     }
 }
