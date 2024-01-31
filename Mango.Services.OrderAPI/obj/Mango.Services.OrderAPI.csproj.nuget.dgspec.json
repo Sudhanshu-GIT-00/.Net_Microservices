@@ -165,7 +165,7 @@
             },
             "Stripe.net": {
               "target": "Package",
-              "version": "[43.12.0-beta.1, )"
+              "version": "[43.13.0-beta.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -173,7 +173,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[7.3.0, )"
             }
           },
           "imports": [
