@@ -46,14 +46,7 @@ namespace Mango.web.Service
                 Url = SD.ProductAPIBase + "/api/product/"
             });
         }
-        //public async Task<ResponseDto?> GetAllProductsAsync()
-        //{
-        //    return await _baseService.SendAsync(new RequestDto()
-        //    {
-        //        ApiType = SD.ApiType.GET,
-        //        Url = SD.ProductAPIBase + "/api/product"
-        //    });
-        // }
+        
         public async Task<ResponseDto?> DeleteProductsAsync(int id)
         {
             return await _baseService.SendAsync(new RequestDto()

@@ -1,5 +1,6 @@
 ﻿using Mango.web.Models;
 using Mango.web.Service.IService;
+using Mango.web.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -48,12 +49,13 @@ namespace Mango.Web.Controllers
                
                var domain = Request.Scheme + "://" + Request.Host.Value + "/";
 
-               StripeRequestDto stripeRequestDto = new()
-               {
-                   AppeovedUrl = domain + "cart/Confirmation?orderId=" + orderHeaderDto.OrderHeaderId,
-                   CancelUrl = domain + "cart/checkout",
-                   OrderHeader = orderHeaderDto
-               };
+               
+                StripeRequestDto stripeRequestDto = new()
+                   {
+                       AppeovedUrl = domain + "cart/Confirmation?orderId=" + orderHeaderDto.OrderHeaderId,
+                       CancelUrl = domain + "cart/checkout",
+                       OrderHeader = orderHeaderDto
+                   };
 
                 var stripeResponse = await _orderService.CreateStripeSession(stripeRequestDto);
                 StripeRequestDto stripeResponseResult = JsonConvert.DeserializeObject<StripeRequestDto>
@@ -63,21 +65,21 @@ namespace Mango.Web.Controllers
             }
            return View();            
         }
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> Confirmation(int orderId)
         {
-            //ResponseDto? response = await _orderService.ValidateStripeSession(orderId);
-            //if (response != null & response.IsSuccess)
-            //{
+            ResponseDto? response = await _orderService.ValidateStripeSession(orderId);
+            if (response != null & response.IsSuccess)
+            {
 
-            //    OrderHeaderDto orderHeader = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
-            //    if (orderHeader.Status == SD.Status_Approved)
-            //    {
-            //        return View(orderId);
-            //    }
-            //}
+                OrderHeaderDto orderHeader = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
+                if (orderHeader.Status == SD.Status_Approved)
+                {
+                    return View(orderId);
+                }
+            }
 
-            ////redirect to some error page based on status
+            //redirect to some error page based on status
             return View(orderId);
         }
 

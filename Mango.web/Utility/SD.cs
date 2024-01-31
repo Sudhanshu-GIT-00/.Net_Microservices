@@ -18,6 +18,14 @@
             POST, 
             PUT, 
             DELETE 
-        }
+        } 
+
+        public const string status_pending = "pending";
+        public const string Status_Approved= "Approved";
+        public const string Status_ResdyForPickup= "ResdyForPickup";
+        public const string Status_Completed= "Completed";
+        public const string Status_Refunded= "Refunded";
+        public const string Status_Cancelled= "Cancelled";
+
     }
 }

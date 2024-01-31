@@ -1,5 +1,4 @@
 ﻿using Mango.web.Models;
-using Mango.web.Services.Models;
 
 namespace Mango.web.Service.IService
 {
@@ -7,5 +6,7 @@ namespace Mango.web.Service.IService
     {
         Task<ResponseDto?> CreateOrder(CartDto cartDto);
         Task<ResponseDto?> CreateStripeSession(StripeRequestDto stripeRequestDto);
+        Task<ResponseDto?> ValidateStripeSession(int orderHeaderId);
+
     }
 }

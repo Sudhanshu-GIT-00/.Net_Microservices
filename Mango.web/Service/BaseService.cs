@@ -24,7 +24,9 @@ namespace Mango.web.Service
                 HttpClient client = _httpClientFactory.CreateClient("MangoAPI");
                 HttpRequestMessage message = new();
                 message.Headers.Add("Accept", "application/json");
+                                
                 //token
+
                 if (withBearer)
                 {
                     var token = _tokenProvider.GetToken();
