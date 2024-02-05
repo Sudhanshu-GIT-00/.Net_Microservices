@@ -35,6 +35,7 @@ namespace Mango.Services.OrderAPI.Controllers
             _mapper = mapper;
             _configuration = configuration;
         }
+        
 
         [Authorize]
         [HttpGet("GetOrders")]
@@ -221,18 +222,18 @@ namespace Mango.Services.OrderAPI.Controllers
                 OrderHeader orderHeader = _db.OrderHeaders.First(u => u.OrderHeaderId == orderId);
                 if (orderHeader != null)
                 {
-                    //if (newStatus == SD.Status_Cancelled)
-                    //{
-                    //    //we will give refund
-                    //    var options = new RefundCreateOptions
-                    //    {
-                    //        Reason = RefundReasons.RequestedByCustomer,
-                    //        PaymentIntent = orderHeader.PaymentIntentId
-                    //    };
+                    if (newStatus == SD.Status_Cancelled)
+                    {
+                        //we will give refund
+                        var options = new RefundCreateOptions
+                        {
+                            Reason = RefundReasons.RequestedByCustomer,
+                            PaymentIntent = orderHeader.PaymentIntentId
+                        };  
 
-                    //    var service = new RefundService();
-                    //    Refund refund = service.Create(options);
-                    //}
+                        var service = new RefundService();
+                        Refund refund = service.Create(options);
+                    }
                     orderHeader.Status = newStatus;
                     _db.SaveChanges();
                 }
