@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4mwNX2BNomQlKxPt3oGGqrw1PNUlCPK4GFxTluxx+38=",
+  "Hash": "kQ6+B1l3J5afoqvRR25o6iP+0zJPAbjryRDPoTcVy5E=",
   "Source": "Mango.web",
   "BasePath": "_content/Mango.web",
   "Mode": "Default",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\images\\order.PNG"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\js\\Order.js",
+      "Identity": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\js\\order.js",
       "SourceId": "Mango.web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\",
       "BasePath": "_content/Mango.web",
-      "RelativePath": "js/Order.js",
+      "RelativePath": "js/order.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Order.js"
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "D:\\Db-Mango\\Mango\\Mango.web\\wwwroot\\js\\site.js",

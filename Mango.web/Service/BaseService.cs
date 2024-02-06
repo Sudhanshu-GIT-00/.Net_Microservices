@@ -2,7 +2,6 @@
 using Mango.web.Service.IService;
 using System.Text;
 using Newtonsoft.Json;
-
 using static Mango.web.Utility.SD;
 using System.Net;
 
@@ -37,7 +36,6 @@ namespace Mango.web.Service
                 if (requestDto.Data != null)
                 {
                     message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
-                    //SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                 }
 
                 HttpResponseMessage? apiResponse = null;

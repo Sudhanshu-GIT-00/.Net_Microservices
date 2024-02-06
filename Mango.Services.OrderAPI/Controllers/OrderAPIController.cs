@@ -35,53 +35,50 @@ namespace Mango.Services.OrderAPI.Controllers
             _mapper = mapper;
             _configuration = configuration;
         }
-        
 
         [Authorize]
-        [HttpGet("GetOrders")]
-        public ResponseDto? Get(string? userId = "")
-        {
-            try
-            {
-                IEnumerable<OrderHeader> objList;
-                if (User.IsInRole(SD.RoleAdmin))
-                {
-                    objList = _db.OrderHeaders.Include(u => u.OrderDetails).OrderByDescending(u => u.OrderHeaderId).ToList();
-                }
-                else
-                {
-                    objList = _db.OrderHeaders.Include(u => u.OrderDetails).Where(u => u.UserId == userId).OrderByDescending(u => u.OrderHeaderId).ToList();
-                }
-                _response.Result = _mapper.Map<IEnumerable<OrderHeaderDto>>(objList);
-            }
-            catch (Exception ex)
-            {
-                _response.IsSuccess = false;
-                _response.Message = ex.Message;
-            }
-            return _response;
-        }
+		[HttpGet("GetOrders")]
+		public ResponseDto? Get(string? userId = "")
+		{
+			try
+			{
+				IEnumerable<OrderHeader> objList;
+				if (User.IsInRole(SD.RoleAdmin))
+				{
+					objList = _db.OrderHeaders.Include(u => u.OrderDetails).OrderByDescending(u => u.OrderHeaderId).ToList();
+				}
+				else
+				{
+					objList = _db.OrderHeaders.Include(u => u.OrderDetails).Where(u => u.UserId == userId).OrderByDescending(u => u.OrderHeaderId).ToList();
+				}
+				_response.Result = _mapper.Map<IEnumerable<OrderHeaderDto>>(objList);
+			}
+			catch (Exception ex)
+			{
+				_response.IsSuccess = false;
+				_response.Message = ex.Message;
+			}
+			return _response;
+		}
 
         [Authorize]
         [HttpGet("GetOrder/{id:int}")]
-        public ResponseDto? Get(int id)
-        {
-            try
-            {
-                OrderHeader orderHeader = _db.OrderHeaders.Include(u => u.OrderDetails).First(u => u.OrderHeaderId == id);
-                _response.Result = _mapper.Map<OrderHeaderDto>(orderHeader);
-            }
-            catch (Exception ex)
-            {
-                _response.IsSuccess = false;
-                _response.Message = ex.Message;
-            }
-            return _response;
-        }
+		public ResponseDto? Get(int id)
+		{
+			try
+			{
+				OrderHeader orderHeader = _db.OrderHeaders.Include(u => u.OrderDetails).First(u => u.OrderHeaderId == id);
+				_response.Result = _mapper.Map<OrderHeaderDto>(orderHeader);
+			}
+			catch (Exception ex)
+			{
+				_response.IsSuccess = false;
+				_response.Message = ex.Message;
+			}
+			return _response;
+		}
 
-
-
-        [Authorize]
+		[Authorize]
         [HttpPost("CreateOrder")]
         public async Task<ResponseDto> CreateOrder([FromBody] CartDto cartDto)
         {
@@ -120,7 +117,7 @@ namespace Mango.Services.OrderAPI.Controllers
                     CancelUrl = stripeRequestDto.CancelUrl,
                     LineItems = new List<SessionLineItemOptions>(),
                     Mode = "payment",
-                    //Discounts =  new List<SessionDiscountOptions>(),
+                    
                 };
 
                 var DiscountsObj = new List<SessionDiscountOptions>()
@@ -241,6 +238,7 @@ namespace Mango.Services.OrderAPI.Controllers
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
+                _response.Message = ex.Message;
             }
             return _response;
         }

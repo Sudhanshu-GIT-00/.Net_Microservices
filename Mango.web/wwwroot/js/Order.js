@@ -1,11 +1,11 @@
-﻿//const { data } = require("jquery");
+﻿var dataTable;
 
-var dataTable;
 $(document).ready(function () {
     loadDataTable();
 });
-function loadDataTable() {
-    dataTable = $('#tblData').dataTable({
+function loadDataTable(status) {
+    dataTable = $('#tblData').DataTable({
+        order: [[0, 'desc']],
         "ajax": { url: "/order/getall" },
         "columns": [
             { data: 'orderHeaderId', "width": "5%" },
