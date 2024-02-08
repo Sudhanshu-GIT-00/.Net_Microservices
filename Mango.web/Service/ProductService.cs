@@ -18,7 +18,8 @@ namespace Mango.web.Service
             {
                 ApiType = SD.ApiType.POST,
                 Data=productDto,
-                Url = SD.ProductAPIBase + "/api/product"
+                Url = SD.ProductAPIBase + "/api/product",
+                ContentType = SD.ContentType.MultipartFormData
             });
         }
         public async Task<ResponseDto?> GetProductAsync(string productCode)
@@ -43,7 +44,9 @@ namespace Mango.web.Service
             {
                 ApiType = SD.ApiType.PUT,
                 Data = productDto,
-                Url = SD.ProductAPIBase + "/api/product/"
+                Url = SD.ProductAPIBase + "/api/product/",
+                ContentType = SD.ContentType.MultipartFormData
+
             });
         }
         

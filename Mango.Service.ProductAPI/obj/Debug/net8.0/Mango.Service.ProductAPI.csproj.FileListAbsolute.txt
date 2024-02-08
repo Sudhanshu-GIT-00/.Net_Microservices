@@ -144,3 +144,4 @@ D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\IdentityModel.dll
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
 D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+D:\Db-Mango\Mango\Mango.Service.ProductAPI\bin\Debug\net8.0\Mango.Service.ProductAPI.staticwebassets.runtime.json

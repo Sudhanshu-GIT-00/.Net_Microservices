@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "cgfuTnD7PVvIgdTjh972NwHZnDWUt+R2jdxrUvxBVrM=",
+  "Hash": "dD+K+hYEktOlzxooQUiicJX0baiGY8nSWdNq8Q1Jo9o=",
   "Source": "Mango.Service.ProductAPI",
   "BasePath": "_content/Mango.Service.ProductAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Mango.Service.ProductAPI\\wwwroot",
+      "Source": "Mango.Service.ProductAPI",
+      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
+      "BasePath": "_content/Mango.Service.ProductAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
