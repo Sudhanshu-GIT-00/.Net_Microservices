@@ -15,7 +15,7 @@ namespace Mango.web.Utility
             var file = value as IFormFile;
             if (file != null)
             {
-                if (file.Length > (_maxFileSize * 1024 * 1024))
+                if (file.Length > (_maxFileSize * 2048 * 2048))
                 {
                     return new ValidationResult($"Maxium allowed file size is {_maxFileSize} MB");
                 }

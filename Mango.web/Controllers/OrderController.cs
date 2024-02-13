@@ -1,6 +1,7 @@
 ﻿using Mango.web.Models;
 using Mango.web.Service.IService;
 using Mango.web.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,11 +15,13 @@ namespace Mango.web.Controllers
 		{
 			_orderService = orderService;
 		}
+		[Authorize]
 		public IActionResult OrderIndex()
 		{
 			return View();
 		}
-		public async Task<IActionResult> OrderDetail(int orderId)
+        [Authorize]
+        public async Task<IActionResult> OrderDetail(int orderId)
 		{
 			OrderHeaderDto orderHeaderDto = new OrderHeaderDto();
 			string userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;

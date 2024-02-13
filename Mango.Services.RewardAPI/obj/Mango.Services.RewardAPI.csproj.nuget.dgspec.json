@@ -62,7 +62,7 @@
             },
             "IdentityModel": {
               "target": "Package",
-              "version": "[6.2.0, )"
+              "version": "[7.0.0-preview.1, )"
             },
             "JsonConverter.Abstractions": {
               "target": "Package",
@@ -89,6 +89,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Ocelot": {
+              "target": "Package",
+              "version": "[22.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

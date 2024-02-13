@@ -56,7 +56,7 @@ namespace Mango.web.Service
                         }
                         else
                         {
-                            content.Add(new StringContent(value == null ? "" :  value.ToString()), prop.Name); ;
+                            content.Add(new StringContent(value == null ? "" : value.ToString()), prop.Name); 
                         }
                     }
                     message.Content = content;

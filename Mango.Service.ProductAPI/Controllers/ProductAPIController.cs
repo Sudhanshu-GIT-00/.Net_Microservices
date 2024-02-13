@@ -58,7 +58,7 @@ namespace Mango.Services.ProductAPI.Controllers
             }
             return _response;
         }
-              
+
         [HttpDelete]
         [Route("{id:int}")]
         [Authorize(Roles = "ADMIN")]
@@ -67,11 +67,11 @@ namespace Mango.Services.ProductAPI.Controllers
             try
             {
                 Product obj = _db.Products.First(u => u.ProductId == id);
-                if(!string.IsNullOrEmpty(obj.ImageLocalPath))
+                if (!string.IsNullOrEmpty(obj.ImageLocalPath))
                 {
                     var oldFilePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), obj.ImageLocalPath);
                     FileInfo file = new FileInfo(oldFilePathDirectory);
-                    if(file.Exists)
+                    if (file.Exists)
                     {
                         file.Delete();
                     }
@@ -89,7 +89,7 @@ namespace Mango.Services.ProductAPI.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles ="ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Post(ProductDto ProductDto)
         {
             try
@@ -128,7 +128,7 @@ namespace Mango.Services.ProductAPI.Controllers
         }
 
         [HttpPut]
-       [Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Put(ProductDto ProductDto)
         {
             try
@@ -159,7 +159,7 @@ namespace Mango.Services.ProductAPI.Controllers
                 }
                 _db.Products.Update(product);
                 _db.SaveChanges();
-                
+
                 _response.Result = _mapper.Map<ProductDto>(product);
             }
             catch (Exception ex)
