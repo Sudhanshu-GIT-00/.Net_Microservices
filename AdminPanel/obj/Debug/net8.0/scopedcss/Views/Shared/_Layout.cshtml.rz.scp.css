@@ -46,3 +46,6 @@ button.accept-policy[b-cxfutip2kg] {
   white-space: nowrap;
   line-height: 60px;
 }
+body[b-cxfutip2kg] {
+    background-color: darkred; /* Change this to your desired color */
+}

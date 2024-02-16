@@ -46,6 +46,11 @@
         "Name": "Mango.GatewaySolution\\Mango.GatewaySolution.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Name": "AdminPanel\\AdminPanel.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
       }
     ]
   }

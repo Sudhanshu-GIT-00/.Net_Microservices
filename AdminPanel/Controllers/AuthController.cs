@@ -41,12 +41,7 @@ namespace AdminPanel.Controllers
                 await SignInUser(loginResponseDto);
                 _tokenProvider.SetToken(loginResponseDto.Token);
                 return RedirectToAction("Index","Home");
-            }
-            //else
-            //{
-            //    ModelState.AddModelError("CustomError", responseDto.Message);
-            //    return View(obj);
-            //}
+            }            
             else
             {
                 TempData["Error"] = responseDto.Message;
@@ -57,12 +52,12 @@ namespace AdminPanel.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-            //var roleList = new List<SelectListItem>()
-            //{
-            //    new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},
-            //    new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer}
-            //};
-            //ViewBag.roleList = roleList;
+            var roleList = new List<SelectListItem>()
+            {
+                new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},
+                new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer}
+            };
+            ViewBag.roleList = roleList;
             return View();
         }
 
