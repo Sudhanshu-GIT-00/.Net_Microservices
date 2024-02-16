@@ -7,9 +7,9 @@ a.navbar-brand[b-cxfutip2kg] {
   word-break: break-all;
 }
 
-a[b-cxfutip2kg] {
+/*a {
   color: #0077cc;
-}
+}*/
 
 .btn-primary[b-cxfutip2kg] {
   color: #fff;
@@ -45,7 +45,4 @@ button.accept-policy[b-cxfutip2kg] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
-}
-body[b-cxfutip2kg] {
-    background-color: darkred; /* Change this to your desired color */
 }

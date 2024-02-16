@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yfopKKstLORube/LQWpjehafP+xx0YVx/ylLsQYaWzk=",
+  "Hash": "C6HKqOLo8e590FBqhECKEFB5g5lh78maPwsutLDTQhk=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -150,12 +150,12 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css.map",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css.map",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,15 +223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -242,15 +242,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css.map",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,15 +261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,15 +280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css.map",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/Admin-bootstrap.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,7 +299,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css.map"
     },
     {
       "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

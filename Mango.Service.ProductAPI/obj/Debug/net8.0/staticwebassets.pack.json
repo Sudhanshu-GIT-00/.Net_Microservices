@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2018.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2018.png"
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2020.png",
+      "PackagePath": "staticwebassets\\ProductImages\\2020.png"
     },
     {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2019.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2019.png"
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2021.png",
+      "PackagePath": "staticwebassets\\ProductImages\\2021.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Mango.Service.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",

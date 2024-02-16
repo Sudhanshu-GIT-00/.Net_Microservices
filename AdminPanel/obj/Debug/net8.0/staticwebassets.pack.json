@@ -29,6 +29,38 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\Admin-bootstrap.rtl.min.css.map"
+    },
+    {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
@@ -123,38 +155,6 @@
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
