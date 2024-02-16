@@ -1,24 +1,12 @@
 {
   "Files": [
     {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2010.jpg",
-      "PackagePath": "staticwebassets\\ProductImages\\2010.jpg"
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2018.png",
+      "PackagePath": "staticwebassets\\ProductImages\\2018.png"
     },
     {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2011.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2011.png"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2012.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2012.png"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2013.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2013.png"
-    },
-    {
-      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2015.png",
-      "PackagePath": "staticwebassets\\ProductImages\\2015.png"
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2019.png",
+      "PackagePath": "staticwebassets\\ProductImages\\2019.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Mango.Service.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",

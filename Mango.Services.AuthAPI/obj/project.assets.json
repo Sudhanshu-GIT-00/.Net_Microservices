@@ -1899,6 +1899,7 @@
         "dependencies": {
           "Azure.Messaging.ServiceBus": "7.17.2",
           "IdentityModel": "7.0.0-preview.1",
+          "JsonConverter.Abstractions": "0.5.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.1",
           "Newtonsoft.Json": "13.0.3",
           "Ocelot": "22.0.1"
@@ -5126,6 +5127,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5214,7 +5220,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

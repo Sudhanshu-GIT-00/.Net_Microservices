@@ -39,10 +39,11 @@ D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\staticwebassets\msbuild
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mango.GatewaySolution.props
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\scopedcss\bundle\Mango.GatewaySolution.styles.css
-D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\Mango.GatewaySolution.csproj.CopyComplete
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\Mango.GatewaySolution.dll
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\refint\Mango.GatewaySolution.dll
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\Mango.GatewaySolution.pdb
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\Mango.GatewaySolution.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\ref\Mango.GatewaySolution.dll
 D:\Db-Mango\Mango\Mango.GatewaySolution\bin\Debug\net8.0\ocelot.json
+D:\Db-Mango\Mango\Mango.GatewaySolution\bin\Debug\net8.0\JsonConverter.Abstractions.dll
+D:\Db-Mango\Mango\Mango.GatewaySolution\obj\Debug\net8.0\Mango.Ga.618E7D28.Up2Date

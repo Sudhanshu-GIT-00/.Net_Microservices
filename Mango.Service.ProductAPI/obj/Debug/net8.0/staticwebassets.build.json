@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "APxZCccEIg10YjK0/DDzNuqBbqOJittOLmhC0VAMEjY=",
+  "Hash": "sWM/53fU2XZ30RyjCWIapOqB0m5oaaqnK9yLOpP+ydI=",
   "Source": "Mango.Service.ProductAPI",
   "BasePath": "_content/Mango.Service.ProductAPI",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2010.jpg",
+      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2018.png",
       "SourceId": "Mango.Service.ProductAPI",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
       "BasePath": "_content/Mango.Service.ProductAPI",
-      "RelativePath": "ProductImages/2010.jpg",
+      "RelativePath": "ProductImages/2018.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImages\\2010.jpg"
+      "OriginalItemSpec": "wwwroot\\ProductImages\\2018.png"
     },
     {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2011.png",
+      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2019.png",
       "SourceId": "Mango.Service.ProductAPI",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
       "BasePath": "_content/Mango.Service.ProductAPI",
-      "RelativePath": "ProductImages/2011.png",
+      "RelativePath": "ProductImages/2019.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,64 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImages\\2011.png"
-    },
-    {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2012.png",
-      "SourceId": "Mango.Service.ProductAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
-      "BasePath": "_content/Mango.Service.ProductAPI",
-      "RelativePath": "ProductImages/2012.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImages\\2012.png"
-    },
-    {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2013.png",
-      "SourceId": "Mango.Service.ProductAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
-      "BasePath": "_content/Mango.Service.ProductAPI",
-      "RelativePath": "ProductImages/2013.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImages\\2013.png"
-    },
-    {
-      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2015.png",
-      "SourceId": "Mango.Service.ProductAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
-      "BasePath": "_content/Mango.Service.ProductAPI",
-      "RelativePath": "ProductImages/2015.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImages\\2015.png"
+      "OriginalItemSpec": "wwwroot\\ProductImages\\2019.png"
     }
   ]
 }

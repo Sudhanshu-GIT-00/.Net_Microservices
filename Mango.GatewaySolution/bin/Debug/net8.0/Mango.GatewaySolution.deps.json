@@ -9,6 +9,7 @@
       "Mango.GatewaySolution/1.0.0": {
         "dependencies": {
           "IdentityModel": "7.0.0-preview.1",
+          "JsonConverter.Abstractions": "0.5.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.1",
           "Ocelot": "22.0.1"
         },
@@ -37,6 +38,14 @@
           "lib/net8.0/IPAddressRange.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "JsonConverter.Abstractions/0.5.0": {
+        "runtime": {
+          "lib/netstandard2.1/JsonConverter.Abstractions.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
           }
         }
       },
@@ -240,6 +249,13 @@
       "sha512": "sha512-3vLppw2bi+LjM/M5TRQBrQ2kRYFge3+aphf5FiKefEImBG/sUM5sYV2TVYbWnZTHTnW24Gc5CucsohGu/GN9gQ==",
       "path": "ipaddressrange/6.0.0",
       "hashPath": "ipaddressrange.6.0.0.nupkg.sha512"
+    },
+    "JsonConverter.Abstractions/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+xjuP5eXF/MNBGdWElFOTpytDXfAtds3hLaqWhZx0iYizEJc+mSzuJRg1uAgD4ZbOUaFKcFq9sYi3tJFPRzE4g==",
+      "path": "jsonconverter.abstractions/0.5.0",
+      "hashPath": "jsonconverter.abstractions.0.5.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.1": {
       "type": "package",

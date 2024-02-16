@@ -41,6 +41,15 @@
           }
         }
       },
+      "JsonConverter.Abstractions/0.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/JsonConverter.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/JsonConverter.Abstractions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -407,6 +416,24 @@
         "lib/netstandard2.1/IPAddressRange.dll",
         "lib/netstandard2.1/IPAddressRange.xml",
         "nupkg-icon.png"
+      ]
+    },
+    "JsonConverter.Abstractions/0.5.0": {
+      "sha512": "+xjuP5eXF/MNBGdWElFOTpytDXfAtds3hLaqWhZx0iYizEJc+mSzuJRg1uAgD4ZbOUaFKcFq9sYi3tJFPRzE4g==",
+      "type": "package",
+      "path": "jsonconverter.abstractions/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jsonconverter.abstractions.0.5.0.nupkg.sha512",
+        "jsonconverter.abstractions.nuspec",
+        "lib/net35/JsonConverter.Abstractions.dll",
+        "lib/net40/JsonConverter.Abstractions.dll",
+        "lib/net45/JsonConverter.Abstractions.dll",
+        "lib/net461/JsonConverter.Abstractions.dll",
+        "lib/netstandard1.3/JsonConverter.Abstractions.dll",
+        "lib/netstandard2.0/JsonConverter.Abstractions.dll",
+        "lib/netstandard2.1/JsonConverter.Abstractions.dll"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.1": {
@@ -851,6 +878,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "IdentityModel >= 7.0.0-preview.1",
+      "JsonConverter.Abstractions >= 0.5.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.1",
       "Ocelot >= 22.0.1"
     ]
@@ -893,6 +921,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -902,6 +935,10 @@
           "IdentityModel": {
             "target": "Package",
             "version": "[7.0.0-preview.1, )"
+          },
+          "JsonConverter.Abstractions": {
+            "target": "Package",
+            "version": "[0.5.0, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -931,7 +968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

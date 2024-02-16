@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/Jmg21srGxlocVhkKNdlPNUCF1n54Jo7gIYVk+aZvJ5zL0X6ZIHiQCx4QXb+HOTSLpfspzUlqgmr9FY2Pg757g==",
+  "dgSpecHash": "KlPHetdGkvM2aV6Ti4OJWxvWXsnnvx2LP9w5Cph/BjoCZsO7VbnDTmA24DvhTlOltb9ridngQ4XiT4tWE7R/aw==",
   "success": true,
   "projectFilePath": "D:\\Db-Mango\\Mango\\Mango.MessageBus\\Mango.MessageBus.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Raktbeej\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\identitymodel\\7.0.0-preview.1\\identitymodel.7.0.0-preview.1.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
+    "C:\\Users\\Raktbeej\\.nuget\\packages\\jsonconverter.abstractions\\0.5.0\\jsonconverter.abstractions.0.5.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.1\\microsoft.aspnetcore.authentication.jwtbearer.8.0.1.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.0\\microsoft.aspnetcore.jsonpatch.8.0.0.nupkg.sha512",
     "C:\\Users\\Raktbeej\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\8.0.0\\microsoft.aspnetcore.middlewareanalysis.8.0.0.nupkg.sha512",

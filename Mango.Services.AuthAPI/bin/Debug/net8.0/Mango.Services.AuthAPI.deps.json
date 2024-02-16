@@ -1147,6 +1147,7 @@
         "dependencies": {
           "Azure.Messaging.ServiceBus": "7.17.2",
           "IdentityModel": "7.0.0-preview.1",
+          "JsonConverter.Abstractions": "0.5.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.1",
           "Newtonsoft.Json": "13.0.3",
           "Ocelot": "22.0.1"
