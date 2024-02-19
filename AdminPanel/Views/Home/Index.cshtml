@@ -1,31 +1,71 @@
-﻿@model IEnumerable<ProductDto>
-
-<form>
-    <div class="container row">
-        @foreach (var product in Model)
-        {
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="p-0 my-3 border rounded">
-                    <div class="card">
-                        <h3 class="card-title text-white-50 text-center py-2">@product.Name</h3>
-                        <img src="@product.ImageUrl" class="card-img-top">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between py-2">
-                                <span class="text-danger" style="font-size:20px;">@string.Format("{0:c}", product.Price)</span>
-                                <span class="badge bg-warning text-white p-2">@product.CategoryName</span>
-                            </div>
-                            <p class="card-text">@Html.Raw(product.Description)</p>
-                            <div class="row">
-                                <div class="col">
-                                    <a asp-action="ProductDetails" asp-route-productId="@product.ProductId" class="btn btn-success form-control">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+﻿<div class="container dashboard-container">
+    <h1 class="text-center mb-4">Admin Dashboard</h1>
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Orders</h5>
+                    <p class="card-text">View and manage orders.</p>
+                    <a asp-controller="Order" asp-action="OrderIndex" class="btn btn-primary">Go to Orders</a>
                 </div>
             </div>
-        }
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Produect</h5>
+                    <p class="card-text">Add, edit, or delete menu items.</p>
+                    <a asp-controller="Product" asp-action="ProductIndex" class="btn btn-primary">Go to Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Coupon</h5>
+                    <p class="card-text">Add, edit, or delete menu items.</p>
+                    <a asp-controller="Coupon" asp-action="CouponIndex" class="btn btn-primary">Go to Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Customers</h5>
+                    <p class="card-text">View customer details.</p>
+                    <a class="btn btn-primary">Go to Customers</a>
+                </div>
+            </div>
+        </div>
     </div>
-</form>
-
-
+    <br/>
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Orders</h5>
+                    <p class="card-text">View and manage orders.</p>
+                    <a asp-controller="Order" asp-action="OrderIndex" class="btn btn-primary">Go to Orders</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Produect</h5>
+                    <p class="card-text">Add, edit, or delete menu items.</p>
+                    <a asp-controller="Product" asp-action="ProductIndex" class="btn btn-primary">Go to Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Customers</h5>
+                    <p class="card-text">View customer details and preferences.</p>
+                    <a href="#" class="btn btn-primary">Go to Customers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

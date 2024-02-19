@@ -42,11 +42,7 @@ namespace Mango.web.Controllers
                 _tokenProvider.SetToken(loginResponseDto.Token);
                 return RedirectToAction("Index","Home");
             }
-            //else
-            //{
-            //    ModelState.AddModelError("CustomError", responseDto.Message);
-            //    return View(obj);
-            //}
+            
             else
             {
                 TempData["Error"] = responseDto.Message;

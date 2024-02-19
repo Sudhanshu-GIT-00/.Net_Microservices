@@ -49,8 +49,7 @@
       },
       {
         "Name": "AdminPanel\\AdminPanel.csproj",
-        "Action": "Start",
-        "DebugTarget": ""
+        "Action": "Start"
       }
     ]
   }

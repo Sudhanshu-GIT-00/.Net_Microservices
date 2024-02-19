@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Security.Claims;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 
 namespace AdminPanel.Controllers
@@ -21,27 +23,24 @@ namespace AdminPanel.Controllers
             _authService = authService;
             _tokenProvider = tokenProvider;
         }
-
         [HttpGet]
         public IActionResult Login()
         {
-            LoginRequestDto loginRequestDto = new();    
+            LoginRequestDto loginRequestDto = new();
             return View(loginRequestDto);
         }
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestDto obj)
         {
             ResponseDto responseDto = await _authService.LoginAsync(obj);
-            
             if (responseDto != null && responseDto.IsSuccess)
             {
                 LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(responseDto.Result));
 
                 await SignInUser(loginResponseDto);
                 _tokenProvider.SetToken(loginResponseDto.Token);
-                return RedirectToAction("Index","Home");
-            }            
+                return RedirectToAction("Index", "Home");
+            }
             else
             {
                 TempData["Error"] = responseDto.Message;
@@ -67,14 +66,14 @@ namespace AdminPanel.Controllers
             obj.Role = SD.RoleCustomer;
             ResponseDto result = await _authService.RegisterAsync(obj);
             ResponseDto assingRole;
-            if (result!=null && result.IsSuccess)
+            if (result != null && result.IsSuccess)
             {
-                if(string.IsNullOrEmpty(obj.Role))
+                if (string.IsNullOrEmpty(obj.Role))
                 {
                     obj.Role = SD.RoleAdmin;
                 }
                 assingRole = await _authService.AssignRoleAsync(obj);
-                if(assingRole!=null && assingRole.IsSuccess)
+                if (assingRole != null && assingRole.IsSuccess)
                 {
                     TempData["success"] = "Registration Successfull";
                     return RedirectToAction(nameof(Login));
@@ -86,7 +85,7 @@ namespace AdminPanel.Controllers
             }
             var roleList = new List<SelectListItem>()
             {
-                new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},
+                //new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},  // New Admin Register
                 new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer}
             };
             ViewBag.roleList = roleList;
