@@ -11,7 +11,6 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
 
-
 namespace AdminPanel.Controllers
 {
     public class AuthController : Controller
@@ -32,20 +31,29 @@ namespace AdminPanel.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequestDto obj)
         {
-            ResponseDto responseDto = await _authService.LoginAsync(obj);
-            if (responseDto != null && responseDto.IsSuccess)
+            try
             {
-                LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(responseDto.Result));
+                ResponseDto responseDto = await _authService.LoginAsync(obj);
+                if (responseDto != null && responseDto.IsSuccess)
+                {
+                    LoginResponseDto loginResponseDto = JsonConvert.DeserializeObject<LoginResponseDto>(Convert.ToString(responseDto.Result));
 
-                await SignInUser(loginResponseDto);
-                _tokenProvider.SetToken(loginResponseDto.Token);
-                return RedirectToAction("Index", "Home");
+                    await SignInUser(loginResponseDto);
+                    _tokenProvider.SetToken(loginResponseDto.Token);
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    TempData["Error"] = responseDto.Message;
+                    return View(obj);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                TempData["Error"] = responseDto.Message;
+                TempData["Error"] = ex.Message;
                 return View(obj);
             }
+           
         }
 
         [HttpGet]
@@ -63,7 +71,6 @@ namespace AdminPanel.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegistrationRequestDto obj)
         {
-            obj.Role = SD.RoleCustomer;
             ResponseDto result = await _authService.RegisterAsync(obj);
             ResponseDto assingRole;
             if (result != null && result.IsSuccess)
@@ -95,30 +102,36 @@ namespace AdminPanel.Controllers
         {
             await HttpContext.SignOutAsync();
             _tokenProvider.ClearedToken();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(nameof(Login));
         }
         private async Task SignInUser(LoginResponseDto model)
         {
             var handler = new JwtSecurityTokenHandler();
 
             var jwt = handler.ReadJwtToken(model.Token);
+            if (jwt.Claims.FirstOrDefault(u => u.Type == "role").Value == "ADMIN")
+            {
+                var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
+                identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email,
+                    jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
+                identity.AddClaim(new Claim(JwtRegisteredClaimNames.Sub,
+                    jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Sub).Value));
+                identity.AddClaim(new Claim(JwtRegisteredClaimNames.Name,
+                    jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
 
-            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
-            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email,
-                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
-            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Sub,
-                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Sub).Value));
-            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Name,
-                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
 
+                identity.AddClaim(new Claim(ClaimTypes.Name,
+                    jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
+                identity.AddClaim(new Claim(ClaimTypes.Role,
+                    jwt.Claims.FirstOrDefault(u => u.Type == "role").Value));
 
-            identity.AddClaim(new Claim(ClaimTypes.Name,
-                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
-            identity.AddClaim(new Claim(ClaimTypes.Role,
-                jwt.Claims.FirstOrDefault(u => u.Type == "role").Value));
-
-            var principal = new ClaimsPrincipal(identity);
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+                var principal = new ClaimsPrincipal(identity);
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            }
+            else
+            {
+                throw new Exception("Only an admin can login this application!!!");
+            }
         }
     }
 

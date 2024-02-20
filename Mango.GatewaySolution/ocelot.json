@@ -205,7 +205,7 @@
           "Port": 7004
         }
       ],
-      "UpstreamPathTemplate": "/api/order/GetOrders{id}",
+      "UpstreamPathTemplate": "/api/order/GetOrders/{id}",
       "UpstreamHttpMethod": [ "Get" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
@@ -227,7 +227,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/order/GetOrder{id}",
+      "DownstreamPathTemplate": "/api/order/GetOrder/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -235,7 +235,7 @@
           "Port": 7004
         }
       ],
-      "UpstreamPathTemplate": "/api/order/GetOrder{id}",
+      "UpstreamPathTemplate": "/api/order/GetOrder/{id}",
       "UpstreamHttpMethod": [ "Get" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"

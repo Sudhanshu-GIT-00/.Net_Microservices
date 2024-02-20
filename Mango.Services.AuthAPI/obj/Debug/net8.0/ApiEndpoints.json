@@ -17,6 +17,16 @@
   },
   {
     "ContainingType": "Mango.Services.AuthAPI.Controllers.AuthAPIController",
+    "Method": "GetUsers",
+    "RelativePath": "api/auth/GetUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mango.Services.AuthAPI.Controllers.AuthAPIController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",

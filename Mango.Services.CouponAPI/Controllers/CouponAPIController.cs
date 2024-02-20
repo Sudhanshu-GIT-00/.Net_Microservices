@@ -77,8 +77,6 @@ namespace Mango.Services.CouponAPI.Controllers
             return _response;
         }
 
-        
-
         [HttpPost]
         [Authorize(Roles = "ADMIN")]
         public ResponseDto Post([FromBody] CouponDto couponDto)

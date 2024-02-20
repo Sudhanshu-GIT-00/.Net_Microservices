@@ -1,6 +1,7 @@
 ﻿using Mango.MessageBus;
 using Mango.Services.AuthAPI.Models.Dto;
 using Mango.Services.AuthAPI.service.IService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +18,6 @@ namespace Mango.Services.AuthAPI.Controllers
         protected ResponseDto _response;
         public AuthAPIController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
         {
-            
             _authService = authService;
             _configuration = configuration;
             _messageBus = messageBus;
@@ -42,9 +42,9 @@ namespace Mango.Services.AuthAPI.Controllers
         public async Task<IActionResult> Login([FromBody] LoginRequestDto model)
         {
             var loginResponse = await _authService.Login(model);
-            if(loginResponse.User == null)
+            if (loginResponse.User == null)
             {
-                _response.IsSuccess=false;
+                _response.IsSuccess = false;
                 _response.Message = "Username or Password is incorrect";
                 return BadRequest(_response);
             }
@@ -56,14 +56,29 @@ namespace Mango.Services.AuthAPI.Controllers
         public async Task<IActionResult> AssignRole([FromBody] RegistrationRequestDto model)
         {
             var assignRoleSuccessful = await _authService.AssignRole(model.Email, model.Role.ToUpper());
-            
-            if(!assignRoleSuccessful)
+
+            if (!assignRoleSuccessful)
             {
-                _response.IsSuccess=false;
+                _response.IsSuccess = false;
                 _response.Message = "Error encountered";
                 return BadRequest(_response);
             }
             return Ok(_response);
         }
+        [HttpPost("GetUsers")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> GetUsers()
+        {
+            _response.Result = await _authService.GetUsers();
+
+            if (_response.Result == null)
+            {
+                _response.IsSuccess = false;
+                _response.Message = "Error encountered";
+                return BadRequest(_response);
+            }
+            return Ok(_response);
+        }
+
     }
 }

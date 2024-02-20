@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\order.PNG"
     },
     {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\customer.js",
+      "PackagePath": "staticwebassets\\js\\customer.js"
+    },
+    {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\order.js",
       "PackagePath": "staticwebassets\\js\\order.js"
     },
@@ -239,6 +243,14 @@
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\css\\dataTables.dataTables.min.css",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\css\\dataTables.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\dataTables.min.js"
     },
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
