@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sVx0pTZX/ZcJ3IzAyrs2TwhyL/WCAZC2/p+N/uz5bTc=",
+  "Hash": "+m+SlbCcEEoWF31lOPvp9eN+ybV7GNJCXcHo1BG7cY8=",
   "Source": "Mango.Service.ProductAPI",
   "BasePath": "_content/Mango.Service.ProductAPI",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductImages\\2021.png"
+    },
+    {
+      "Identity": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\3020.png",
+      "SourceId": "Mango.Service.ProductAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\",
+      "BasePath": "_content/Mango.Service.ProductAPI",
+      "RelativePath": "ProductImages/3020.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImages\\3020.png"
     }
   ]
 }

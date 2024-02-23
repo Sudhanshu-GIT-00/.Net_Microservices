@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\ProductImages\\2021.png"
     },
     {
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\3020.png",
+      "PackagePath": "staticwebassets\\ProductImages\\3020.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Mango.Service.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

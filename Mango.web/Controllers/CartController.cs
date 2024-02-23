@@ -1,6 +1,7 @@
 ﻿using Mango.web.Models;
 using Mango.web.Service.IService;
 using Mango.web.Utility;
+using Mango.web.Services.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -38,6 +39,7 @@ namespace Mango.Web.Controllers
             cart.CartHeader.Phone = cartDto.CartHeader.Phone;
             cart.CartHeader.Email = cartDto.CartHeader.Email;
             cart.CartHeader.Name = cartDto.CartHeader.Name;
+            cart.CartHeader.Address = cartDto.CartHeader.Address;
 
             var response = await _orderService.CreateOrder(cart);
             OrderHeaderDto orderHeaderDto = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
@@ -45,7 +47,7 @@ namespace Mango.Web.Controllers
             if (response != null && response.IsSuccess)
             {
                 //get stripe session and redirect to stripe to place order
-                //
+                
                 var domain = Request.Scheme + "://" + Request.Host.Value + "/";
 
                 StripeRequestDto stripeRequestDto = new()
@@ -68,7 +70,7 @@ namespace Mango.Web.Controllers
         public async Task<IActionResult> Confirmation(int orderId)
         {
             ResponseDto? response = await _orderService.ValidateStripeSession(orderId);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
 
                 OrderHeaderDto orderHeader = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
@@ -85,7 +87,7 @@ namespace Mango.Web.Controllers
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
             ResponseDto? response = await _cartService.RemoveFromCartAsync(cartDetailsId);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
                 TempData["success"] = "Cart updated successfully";
                 return RedirectToAction(nameof(CartIndex));
@@ -98,7 +100,7 @@ namespace Mango.Web.Controllers
         {
 
             ResponseDto? response = await _cartService.ApplyCouponAsync(cartDto);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
                 TempData["success"] = "Cart updated successfully";
                 return RedirectToAction(nameof(CartIndex));
@@ -112,7 +114,7 @@ namespace Mango.Web.Controllers
             CartDto cart = await LoadCartDtoBasedOnLoggedInUser();
             cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
             ResponseDto? response = await _cartService.EmailCart(cart);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
                 TempData["success"] = "Email will be processed and sent shortly.";
                 return RedirectToAction(nameof(CartIndex));
@@ -125,7 +127,7 @@ namespace Mango.Web.Controllers
         {
             cartDto.CartHeader.CouponCode = "";
             ResponseDto? response = await _cartService.ApplyCouponAsync(cartDto);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
                 TempData["success"] = "Cart updated successfully";
                 return RedirectToAction(nameof(CartIndex));
@@ -138,7 +140,7 @@ namespace Mango.Web.Controllers
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
             ResponseDto? response = await _cartService.GetCartByUserIdAsnyc(userId);
-            if (response != null & response.IsSuccess)
+            if (response != null && response.IsSuccess)
             {
                 CartDto cartDto = JsonConvert.DeserializeObject<CartDto>(Convert.ToString(response.Result));
                 return cartDto;

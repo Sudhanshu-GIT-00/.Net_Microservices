@@ -43,14 +43,14 @@
         "DebugTarget": "https"
       },
       {
-        "Name": "Mango.GatewaySolution\\Mango.GatewaySolution.csproj",
+        "Name": "AdminPanel\\AdminPanel.csproj",
         "Action": "Start",
         "DebugTarget": "https"
       },
       {
-        "Name": "AdminPanel\\AdminPanel.csproj",
+        "Name": "Mango.GatewaySolution\\Mango.GatewaySolution.csproj",
         "Action": "Start",
-        "DebugTarget": ""
+        "DebugTarget": "https"
       }
     ]
   }

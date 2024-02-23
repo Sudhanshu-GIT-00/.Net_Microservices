@@ -100,6 +100,9 @@ namespace Mango.web.Controllers
                     case "cancelled":
                         list = list.Where(u => u.Status == SD.Status_Cancelled || u.Status == SD.Status_Refunded);
                         break;
+					case "orderTime":
+                        list = list.Where(u => u.Status == SD.Status_OrderTime);
+                        break;
                     default:
 						break;
                 }

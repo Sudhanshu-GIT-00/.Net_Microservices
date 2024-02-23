@@ -14,7 +14,12 @@ $(document).ready(function () {
                 loadDataTable("cancelled");
             }
             else {
-                loadDataTable("all")
+                if (url.includes("orderTime")){
+                    loadDataTable("orderTime");
+                }
+                else {
+                    loadDataTable("all")
+                }
             }
         }
     }
