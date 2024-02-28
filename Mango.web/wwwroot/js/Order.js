@@ -35,6 +35,7 @@ function loadDataTable(status) {
             { data: 'phone', "width": "10%" },
             { data: 'status', "width": "10%" },
             { data: 'orderTotal', "width": "10%" },
+            { data: 'orderTime', "width": "10%" },
             {
                 data: 'orderHeaderId',
                 "render": function (data) {

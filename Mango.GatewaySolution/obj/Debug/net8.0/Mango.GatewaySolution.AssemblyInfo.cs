@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mango.GatewaySolution")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52dc08f5cf883437080f07547c5d59a789c435f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+913d203b0b8e01580c07e036e20b72dcca4ae4c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mango.GatewaySolution")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mango.GatewaySolution")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

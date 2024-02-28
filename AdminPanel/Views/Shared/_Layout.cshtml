@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/Mango.web.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="~/lib/jquery/dist/css/datatables.datatables.min.css" rel="stylesheet" />
+    <link href="~/lib/jquery/dist/css/jquery-ui.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -46,22 +47,22 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex">
-                                          Daily Order List
+                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex" asp-route-dailyOrderId="dailyOrderId">
+                                            Daily Order List
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex">
+                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex" asp-route-status="monthlyOrderId">
                                             Monthly Order List
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex">
+                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex" asp-route-status="yearlyOrderId">
                                             Yearly Order List
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex">
+                                        <a class="nav-link" asp-area="" asp-controller="Order" asp-action="OrderIndex" asp-route-status="all">
                                             Order List
                                         </a>
                                     </li>
@@ -107,6 +108,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/jquery/dist/datatables.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+    <script src="~/lib/jquery/dist/moment.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

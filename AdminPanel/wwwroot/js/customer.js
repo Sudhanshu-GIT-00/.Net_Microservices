@@ -1,5 +1,9 @@
-﻿
+﻿$(function () {
 
-$(function () {
     $("#tblData").DataTable();
+    
 })
+
+
+
+

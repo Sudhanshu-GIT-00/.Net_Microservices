@@ -1,0 +1,37 @@
+﻿@{
+    var url = Model[0];
+
+}
+
+<div class="row">
+    @if (url == "monthlyOrderId")
+    {
+        <div class="col-4">
+            <select id="ddlMonths" class="nav-item dropdown-menu-dark list-group-item">
+                <option>Select Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+    }
+    <div class="col-4">
+        <select id="ddlYears" class="nav-item dropdown-menu-dark list-group-item">
+            <option>Select Year</option>
+        </select>
+    </div>
+    <div class="col-4">
+        <a style="text-decoration:none">
+            <input type="button" class="list-group-item" value="Search" id="txtBtn">
+        </a>
+    </div>
+</div>

@@ -8,17 +8,7 @@
         "DebugTarget": "https"
       },
       {
-        "Name": "Mango.web\\Mango.web.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
-      },
-      {
         "Name": "Mango.Services.AuthAPI\\Mango.Services.AuthAPI.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
-      },
-      {
-        "Name": "Mango.Service.ProductAPI\\Mango.Service.ProductAPI.csproj",
         "Action": "Start",
         "DebugTarget": "https"
       },
@@ -38,11 +28,6 @@
         "DebugTarget": "https"
       },
       {
-        "Name": "Mango.Services.RewardAPI\\Mango.Services.RewardAPI.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
-      },
-      {
         "Name": "AdminPanel\\AdminPanel.csproj",
         "Action": "Start",
         "DebugTarget": "https"
@@ -51,6 +36,18 @@
         "Name": "Mango.GatewaySolution\\Mango.GatewaySolution.csproj",
         "Action": "Start",
         "DebugTarget": "https"
+      },
+      {
+        "Name": "Mango.web\\Mango.web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Mango.Service.ProductAPI\\Mango.Service.ProductAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Mango.Services.RewardAPI\\Mango.Services.RewardAPI.csproj",
+        "Action": "Start"
       }
     ]
   }

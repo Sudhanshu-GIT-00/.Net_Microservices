@@ -249,8 +249,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\css\\dataTables.dataTables.min.css"
     },
     {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\css\\jquery-ui.css"
+    },
+    {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\dataTables.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-ui.js"
     },
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
@@ -263,6 +271,10 @@
     {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\lib\\jquery\\dist\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\moment.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AdminPanel.Microsoft.AspNetCore.StaticWebAssets.props",
