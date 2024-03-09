@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\order.PNG"
     },
     {
+      "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
       "Id": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\customer.js",
       "PackagePath": "staticwebassets\\js\\customer.js"
     },

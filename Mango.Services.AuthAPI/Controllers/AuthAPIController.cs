@@ -1,4 +1,6 @@
-﻿using Mango.MessageBus;
+﻿using AutoMapper;
+using Mango.MessageBus;
+using Mango.Services.AuthAPI.Models;
 using Mango.Services.AuthAPI.Models.Dto;
 using Mango.Services.AuthAPI.service.IService;
 using Microsoft.AspNetCore.Authorization;
@@ -15,11 +17,13 @@ namespace Mango.Services.AuthAPI.Controllers
         private readonly IAuthService _authService;
         private readonly IMessageBus _messageBus;
         private readonly IConfiguration _configuration;
+        private readonly IMapper _mapper;
         protected ResponseDto _response;
-        public AuthAPIController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
+        public AuthAPIController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration, IMapper mapper)
         {
             _authService = authService;
             _configuration = configuration;
+            this._mapper = mapper;
             _messageBus = messageBus;
             _response = new();
         }
@@ -65,12 +69,27 @@ namespace Mango.Services.AuthAPI.Controllers
             }
             return Ok(_response);
         }
+
         [HttpPost("GetUsers")]
         [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetUsers()
         {
             _response.Result = await _authService.GetUsers();
 
+            if (_response.Result == null)
+            {
+                _response.IsSuccess = false;
+                _response.Message = "Error encountered";
+                return BadRequest(_response);
+            }
+            return Ok(_response);
+        }
+
+        [HttpPost(Name = "UpsertSecurityQuestion")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> UpsertSecurityQuestion([FromBody] SecurityQuestionRequestDto securityQuestionRequest)
+        {
+            var result = await _authService.UpsertSecurityQuestion(_mapper.Map<SecurityQuestions>( securityQuestionRequest));
             if (_response.Result == null)
             {
                 _response.IsSuccess = false;

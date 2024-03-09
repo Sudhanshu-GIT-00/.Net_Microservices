@@ -18,8 +18,8 @@ namespace Mango.Services.AuthAPI.service
         private IMapper _mapper;
 
 
-        public AuthService(AppDbContext db, IJwtTokenGenerator jwtTokenGenerator, 
-            UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager,IMapper mapper
+        public AuthService(AppDbContext db, IJwtTokenGenerator jwtTokenGenerator,
+            UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IMapper mapper
             )
         {
             _db = db;
@@ -44,6 +44,21 @@ namespace Mango.Services.AuthAPI.service
             }
             return false;
 
+        }
+
+        public async Task<string> UpsertSecurityQuestion(SecurityQuestions securityQuestionRequest)
+        {
+            try
+            {
+                await _db.SecurityQuestions.AddAsync(securityQuestionRequest);
+                await _db.SaveChangesAsync();
+
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return "Error encountered";
+            }
         }
 
         public async Task<List<UserDto>> GetUsers()

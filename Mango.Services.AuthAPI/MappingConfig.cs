@@ -11,6 +11,7 @@ namespace Mango.Services.AuthAPI
             var mappingConfig = new MapperConfiguration(config =>
             {
                 config.CreateMap<UserDto, ApplicationUser>().ReverseMap();
+                config.CreateMap<SecurityQuestionRequestDto, SecurityQuestions>().ReverseMap();
             });
             return mappingConfig;
 

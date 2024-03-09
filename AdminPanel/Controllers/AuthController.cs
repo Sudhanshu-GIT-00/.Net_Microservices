@@ -53,7 +53,7 @@ namespace AdminPanel.Controllers
                 TempData["Error"] = ex.Message;
                 return View(obj);
             }
-           
+
         }
 
         [HttpGet]
@@ -92,12 +92,26 @@ namespace AdminPanel.Controllers
             }
             var roleList = new List<SelectListItem>()
             {
-                //new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},  // New Admin Register
+                new SelectListItem{Text=SD.RoleAdmin,Value=SD.RoleAdmin},  // New Admin Register
                 new SelectListItem{Text=SD.RoleCustomer,Value=SD.RoleCustomer}
             };
             ViewBag.roleList = roleList;
             return View(obj);
         }
+
+        [HttpGet]
+        public IActionResult SecurityQuestion()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpsertSecurityQuestion(SecurityQuestionRequestDto securityQuestionRequest)
+        {
+            ResponseDto result = await _authService.UpsertSecurityQuestion(securityQuestionRequest);
+            return Json(new { data = "" });
+        }
+
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
@@ -133,6 +147,8 @@ namespace AdminPanel.Controllers
                 throw new Exception("Only an admin can login this application!!!");
             }
         }
+
+
     }
 
 }

@@ -17,7 +17,6 @@ IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-//builder.Services.AddSwaggerGen();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -50,17 +49,20 @@ builder.Services.AddSwaggerGen(option =>
 builder.AddAppAuthetication();
 
 builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(config =>
+    if (!app.Environment.IsDevelopment())
     {
-        config.SwaggerEndpoint("/swagger/v1/swagger.json", "Coupon API");
-    });
-}
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Coupon API");
+        c.RoutePrefix = string.Empty;
+    }
+});
+
 Stripe.StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 app.UseHttpsRedirection();
 app.UseAuthentication();

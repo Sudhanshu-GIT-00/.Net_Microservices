@@ -146,9 +146,10 @@ D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\staticwebassets\msbu
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mango.Services.RewardAPI.props
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\scopedcss\bundle\Mango.Services.RewardAPI.styles.css
+D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\Mango.Se.DAD7340F.Up2Date
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\Mango.Services.RewardAPI.dll
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\refint\Mango.Services.RewardAPI.dll
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\Mango.Services.RewardAPI.pdb
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\Mango.Services.RewardAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\ref\Mango.Services.RewardAPI.dll
-D:\Db-Mango\Mango\Mango.Services.RewardAPI\obj\Debug\net8.0\Mango.Se.DAD7340F.Up2Date
+D:\Db-Mango\Mango\Mango.Services.RewardAPI\bin\Debug\net8.0\appsettings.Production.json

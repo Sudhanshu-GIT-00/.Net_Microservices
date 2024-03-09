@@ -39,15 +39,18 @@
       },
       {
         "Name": "Mango.web\\Mango.web.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "Mango.Service.ProductAPI\\Mango.Service.ProductAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "Mango.Services.RewardAPI\\Mango.Services.RewardAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       }
     ]
   }

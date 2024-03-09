@@ -154,9 +154,10 @@ D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\staticwebassets\msbuil
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mango.Services.AuthAPI.props
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\scopedcss\bundle\Mango.Services.AuthAPI.styles.css
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Se.9E89EA84.Up2Date
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.dll
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\refint\Mango.Services.AuthAPI.dll
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.pdb
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Services.AuthAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\ref\Mango.Services.AuthAPI.dll
-D:\Db-Mango\Mango\Mango.Services.AuthAPI\obj\Debug\net8.0\Mango.Se.9E89EA84.Up2Date
+D:\Db-Mango\Mango\Mango.Services.AuthAPI\bin\Debug\net8.0\appsettings.Production.json

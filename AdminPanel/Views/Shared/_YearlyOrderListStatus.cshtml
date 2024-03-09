@@ -24,14 +24,6 @@
             break;
     }
 }
-
-@* <a style="text-decoration:none">
-    <input type="text" class="list-group-item" id="txtDatePicker">
-</a>
-<a style="text-decoration:none">
-    <input type="button" class="list-group-item" value="Search" id="txtBtn">
-</a> *@
-
 <li class="dropdown">
     <select id="ddlMonths">
         <option>Select Month</option>
@@ -49,16 +41,3 @@
         <option value="12">December</option>
     </select>
 </li>
-@*
-<a style="text-decoration:none" asp-controller="Order" asp-action="OrderIndex" asp-route-status="approved">
-    <li class="list-group-item @approved">Approved</li>
-</a>
-<a style="text-decoration:none" asp-controller="Order" asp-action="OrderIndex" asp-route-status="readyforpickup">
-    <li class="list-group-item @readyforpickup">Ready for Pikcup</li>
-</a>
-<a style="text-decoration:none" asp-controller="Order" asp-action="OrderIndex" asp-route-status="cancelled">
-    <li class="list-group-item @cancelled">Cancelled</li>
-</a>
-<a style="text-decoration:none" asp-controller="Order" asp-action="OrderIndex" asp-route-status="all">
-    <li class="list-group-item @all">All</li>
-</a> *@

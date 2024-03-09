@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\2021.png",
+      "PackagePath": "staticwebassets\\ProductImages\\2021.png"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\3020.png",
+      "PackagePath": "staticwebassets\\ProductImages\\3020.png"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\4021.png",
+      "PackagePath": "staticwebassets\\ProductImages\\4021.png"
+    },
+    {
+      "Id": "D:\\Db-Mango\\Mango\\Mango.Service.ProductAPI\\wwwroot\\ProductImages\\4022.png",
+      "PackagePath": "staticwebassets\\ProductImages\\4022.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.Mango.Service.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.build.Mango.Service.ProductAPI.props",
+      "PackagePath": "build\\Mango.Service.ProductAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.Mango.Service.ProductAPI.props",
+      "PackagePath": "buildMultiTargeting\\Mango.Service.ProductAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.Mango.Service.ProductAPI.props",
+      "PackagePath": "buildTransitive\\Mango.Service.ProductAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

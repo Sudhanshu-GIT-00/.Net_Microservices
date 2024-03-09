@@ -1,0 +1,9 @@
+﻿$(function () {
+
+    $("#tblData").DataTable();
+    
+})
+
+
+
+

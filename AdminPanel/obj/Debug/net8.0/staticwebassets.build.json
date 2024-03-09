@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aVm5n7hYT/6I9STzSCqhJIkN5XHOHu7fe6t50zBQ2qU=",
+  "Hash": "mteEAJg9niIbwYvnyU97IUtZ/LqxwSf29VMjQvUFOy8=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\order.PNG"
+    },
+    {
+      "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\auth.js",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "js/auth.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\auth.js"
     },
     {
       "Identity": "D:\\Db-Mango\\Mango\\AdminPanel\\wwwroot\\js\\customer.js",

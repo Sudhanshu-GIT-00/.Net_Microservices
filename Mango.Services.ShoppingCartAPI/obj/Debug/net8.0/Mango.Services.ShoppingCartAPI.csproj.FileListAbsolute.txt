@@ -148,9 +148,10 @@ D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\staticwebasset
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mango.Services.ShoppingCartAPI.props
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\scopedcss\bundle\Mango.Services.ShoppingCartAPI.styles.css
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Se.7B74160C.Up2Date
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.dll
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\refint\Mango.Services.ShoppingCartAPI.dll
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.pdb
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Services.ShoppingCartAPI.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\ref\Mango.Services.ShoppingCartAPI.dll
-D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\obj\Debug\net8.0\Mango.Se.7B74160C.Up2Date
+D:\Db-Mango\Mango\Mango.Services.ShoppingCartAPI\bin\Debug\net8.0\appsettings.Production.json

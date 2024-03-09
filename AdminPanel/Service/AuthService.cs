@@ -21,6 +21,16 @@ namespace AdminPanel.Service
             });
         }
 
+        public async Task<ResponseDto?> UpsertSecurityQuestion(SecurityQuestionRequestDto securityQuestionRequest)
+        {
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = securityQuestionRequest,
+                Url = SD.AuthAPIBase + "/api/auth/UpsertSecurityQuestion"
+            });
+        }
+
         public async Task<ResponseDto?> LoginAsync(LoginRequestDto loginRequestDto)
         {
             return await _baseService.SendAsync(new RequestDto()
