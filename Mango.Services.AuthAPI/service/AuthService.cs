@@ -133,7 +133,7 @@ namespace Mango.Services.AuthAPI.service
             }
             catch (Exception ex)
             {
-                return "Error Encountered";
+               return "Error Encountered";
             }
         }
     }

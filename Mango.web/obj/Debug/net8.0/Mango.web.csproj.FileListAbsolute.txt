@@ -59,3 +59,4 @@ D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\refint\Mango.web.dll
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\Mango.web.pdb
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\Mango.web.genruntimeconfig.cache
 D:\Db-Mango\Mango\Mango.web\obj\Debug\net8.0\ref\Mango.web.dll
+D:\Db-Mango\Mango\Mango.web\bin\Debug\net8.0\appsettings.Production.json

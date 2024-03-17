@@ -40,17 +40,17 @@
       {
         "Name": "Mango.web\\Mango.web.csproj",
         "Action": "Start",
-        "DebugTarget": ""
+        "DebugTarget": "https"
       },
       {
         "Name": "Mango.Service.ProductAPI\\Mango.Service.ProductAPI.csproj",
         "Action": "Start",
-        "DebugTarget": ""
+        "DebugTarget": "https"
       },
       {
         "Name": "Mango.Services.RewardAPI\\Mango.Services.RewardAPI.csproj",
         "Action": "Start",
-        "DebugTarget": ""
+        "DebugTarget": "https"
       }
     ]
   }

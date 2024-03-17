@@ -59,3 +59,4 @@ D:\Db-Mango\Mango\AdminPanel\obj\Debug\net8.0\refint\AdminPanel.dll
 D:\Db-Mango\Mango\AdminPanel\obj\Debug\net8.0\AdminPanel.pdb
 D:\Db-Mango\Mango\AdminPanel\obj\Debug\net8.0\AdminPanel.genruntimeconfig.cache
 D:\Db-Mango\Mango\AdminPanel\obj\Debug\net8.0\ref\AdminPanel.dll
+D:\Db-Mango\Mango\AdminPanel\bin\Debug\net8.0\appsettings.Production.json

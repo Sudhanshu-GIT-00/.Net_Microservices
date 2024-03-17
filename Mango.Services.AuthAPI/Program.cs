@@ -55,9 +55,9 @@ builder.Services.AddSwaggerGen(option =>
         }
     });
 });
-builder.AddAppAuthetication();
+//builder.AddAppAuthetication();
 
-builder.Services.AddAuthorization();
+//builder.Services.AddAuthorization();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,7 +66,7 @@ app.UseSwaggerUI(c =>
 {
     if (!app.Environment.IsDevelopment())
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth API");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cart API");
         c.RoutePrefix = string.Empty;
     }
 });

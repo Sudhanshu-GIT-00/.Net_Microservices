@@ -10,23 +10,32 @@ namespace Mango.MessageBus
 {
     public class MessageBus : IMessageBus
     {
-        private string connectionString = "Endpoint=sb://aahaar.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=+wSssO9ppqHRx7VhrjCAQNlrwyfzTykZ8+ASbNVtAqw=";
+        private string connectionString = "Endpoint=sb://annapurna.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=WZaU0M7lWgspbhZby7Ic1jUsfuT6qQrvm+ASbLNLgK0=";
 
-        public async Task PublishMessage(object message, string topic_queue_Name)
+        public async Task PublishMessage(object message, string topic_queue_Name) 
         {
-            await using var client = new ServiceBusClient(connectionString);
-
-            ServiceBusSender sender = client.CreateSender(topic_queue_Name);
-
-            var jsonMessage = JsonConvert.SerializeObject(message);
-            ServiceBusMessage finalMessage = new ServiceBusMessage(Encoding
-                .UTF8.GetBytes(jsonMessage))
+            try
             {
-                CorrelationId = Guid.NewGuid().ToString(),
-            };
+                await using var client = new ServiceBusClient(connectionString);
 
-            await sender.SendMessageAsync(finalMessage);
-            await client.DisposeAsync();
+                ServiceBusSender sender = client.CreateSender(topic_queue_Name);
+
+                var jsonMessage = JsonConvert.SerializeObject(message);
+                ServiceBusMessage finalMessage = new ServiceBusMessage(Encoding
+                    .UTF8.GetBytes(jsonMessage))
+                {
+                    CorrelationId = Guid.NewGuid().ToString(),
+                };
+
+                await sender.SendMessageAsync(finalMessage);
+                await client.DisposeAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
